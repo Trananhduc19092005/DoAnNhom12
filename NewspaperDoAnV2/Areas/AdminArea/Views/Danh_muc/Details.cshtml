@@ -1,0 +1,27 @@
+﻿@model NewspaperDoAnV2.Models.Danh_muc
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/AdminArea/Views/Shared/_adminlayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Danh_muc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.danhmuc_noidung)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.danhmuc_noidung)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit" , "Danh_muc" , new { id = Model.danhmuc_id } , new {@class  = "btn btn-primary" }) |
+    @Html.ActionLink("Back to List", "Index" , "Danh_muc", new {@class = "btn btn-success"})
+</p>

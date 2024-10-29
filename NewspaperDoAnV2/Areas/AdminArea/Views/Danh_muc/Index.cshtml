@@ -1,0 +1,45 @@
+﻿@model IEnumerable<NewspaperDoAnV2.Models.Danh_muc>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/AdminArea/Views/Shared/_adminlayout.cshtml";
+}
+
+<h2> Danh Sách Danh Mục </h2>
+
+<p>
+<p>
+    @Html.ActionLink("Tạo Danh Mục Mới ", "Create" , "Danh_muc" , new {@class = "btn btn-primary"})
+</p>
+<table class="table table-dark">
+    <tr>
+
+        <th>
+            Id
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.danhmuc_noidung)
+        </th>
+        <th> Option </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.danhmuc_id)
+        </td>
+
+
+        <td>
+            @Html.DisplayFor(modelItem => item.danhmuc_noidung)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", "Danh_muc", new { id = item.danhmuc_id }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Details", "Details", "Danh_muc", new { id = item.danhmuc_id }, new { @class = "btn btn-success" }) |
+            @Html.ActionLink("Delete", "Delete", "Danh_muc", new { id = item.danhmuc_id }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

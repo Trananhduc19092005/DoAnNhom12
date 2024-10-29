@@ -1,0 +1,44 @@
+﻿@model IEnumerable<NewspaperDoAnV2.Models.Phan_Quyen>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/AdminArea/Views/Shared/_adminlayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Role_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Role_id)
+        </th>
+
+        <th>
+            Option
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Role_name)
+        </td>
+
+        <td>
+            @Html.DisplayFor(model => item.Role_id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Role_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Role_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Role_id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,46 @@
+﻿@model NewspaperDoAnV2.Models.Danh_muc
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/AdminArea/Views/Shared/_adminlayout.cshtml";
+}
+
+<h2> Xóa Danh Mục </h2>
+
+<h3>
+    Bạn có chắc chắn là muốn xóa danh mục này không 
+</h3>
+<div>
+    <h4>Danh_muc</h4>
+    <hr />
+    <table class="table table-danger">
+        <tr>
+            <th>
+                Danh Mục Id
+            </th>
+
+            <th>
+                Tên Danh Mục
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.danhmuc_id)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.danhmuc_noidung)
+            </td>
+        </tr>
+    </table>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index" , " " , new {@class  ="btn btn-success"})
+        </div>
+    }
+</div>

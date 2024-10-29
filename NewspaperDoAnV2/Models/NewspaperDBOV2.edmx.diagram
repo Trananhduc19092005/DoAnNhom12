@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a03195b85d5d4cb494db961bb291261c" Name="Diagram1" ZoomLevel="93">
+        <EntityTypeShape EntityType="NewspaperV7Model.Comment" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV7Model.Danh_muc" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV7Model.Liked" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV7Model.Newspaper" Width="1.5" PointX="8.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV7Model.Phan_Quyen" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV7Model.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV7Model.User" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="NewspaperV7Model.FK__Comment__Newspap__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV7Model.FK__Comment__UserID__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV7Model.fk_danhmucid" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV7Model.FK__Liked__Newspaper__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV7Model.FK__Liked__UserID__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV7Model.FK__Newspaper__UserI__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV7Model.FK__Users__Role_id__398D8EEE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

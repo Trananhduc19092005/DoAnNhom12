@@ -1,0 +1,90 @@
+﻿@model NewspaperDoAnV2.Models.Newspaper
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/AdminArea/Views/Shared/_adminlayout.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Newspaper</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.NewspaperId)
+
+    <div class="card">
+        <div class="card-header">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Newspaper_tieude, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10 mt-3">
+                    @Html.TextAreaFor(model => model.Newspaper_tieude, new { @class = "form-control", rows = 2, columns = 20 })
+                    @Html.ValidationMessageFor(model => model.Newspaper_tieude, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group mt-3">
+                @Html.LabelFor(model => model.Newspaper_tieudephu, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.Newspaper_tieudephu, new { @class = "form-control mt-3", rows = 2, columns = 20 })
+                    @Html.ValidationMessageFor(model => model.Newspaper_tieudephu, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Newspaper_anh, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Newspaper_anh, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Newspaper_anh, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p class="mt-3"> Nội Dung Báo </p>
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.Newspaper_noidung, new { @class = "form-control w-100", rows = 30, columns = 50 })
+                    @Html.ValidationMessageFor(model => model.Newspaper_noidung, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="card-footer">
+            <div class="form-group">
+                <p class="mt-3"> Người Viết </p>
+                <div class="col-md-10">
+                    @Html.DropDownList("UserID", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.UserID, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p class="mt-3"> Danh Mục </p>
+                <div class="col-md-10">
+                    @Html.DropDownList("danhmuc_id", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.danhmuc_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+        <div class="form-group mt-3 mb-3">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index" , " " , new {@class = "btn btn-success"})
+</div>

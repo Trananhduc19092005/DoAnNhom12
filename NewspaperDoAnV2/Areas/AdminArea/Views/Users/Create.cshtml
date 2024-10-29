@@ -1,0 +1,73 @@
+﻿@model NewspaperDoAnV2.Models.User
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<style>
+    .container
+    {
+        min-height : 100vh;
+    }
+
+    .box
+    {
+        box-shadow : 0px 0px 5px black;
+        padding : 30px;
+        border-radius : 20px;
+    }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+
+    <div class="container d-flex justify-content-lg-center align-items-center">
+        <div class="box">
+            <h4 class="text-center"> SIGNUP </h4>
+
+
+            <div class="form-group">
+                <h6> UserName </h6>
+                @Html.EditorFor(Model => Model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+
+            <div class="form-group mt-3">
+                <h6> Password </h6>
+                @Html.EditorFor(Model => Model.UserPassword, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+
+
+            <div class="form-group mt-3">
+                <h6> RePassword </h6>
+                @Html.EditorFor(Model => Model.Repassword, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Repassword, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mt-3">
+                <h6> EmailAddress </h6>
+                @Html.EditorFor(Model => Model.UserEmail, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+
+            <div class="form-group mt-3">
+                <h6> UserRole </h6>
+                @Html.DropDownList("Role_id")
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-primary mt-3" />
+                </div>
+
+                @Html.ActionLink("You Already Have An Account ? LogIn Here ", "Login", "Users", new { @class = "btn btn-success mt-3" })
+            </div>
+        </div>
+
+    </div>
+
+
+    
+}
+

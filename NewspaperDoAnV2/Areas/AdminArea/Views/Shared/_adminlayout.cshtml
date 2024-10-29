@@ -1,0 +1,101 @@
+﻿
+@{
+
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_AdminMasterLayout</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/131e0ec2d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        nav {
+            padding: 30px;
+            height: 50px;
+        }
+    </style>
+    <div class="box row row-cols-2">
+        <div class="col col-2 d-flex flex-column bg-dark mh-100 overflow-hidden" style="padding : 250px 25px">
+
+            <div class="QuanLyBao m-3 " style="">
+                <i class="fa-solid fa-newspaper text-light"></i>
+                @Html.ActionLink("Quản Lý Báo", "Index", "Newspapers", new { Area = "AdminArea" } , new { @class = "btn btn-primary m-3" })
+            </div>
+
+            <div class="Quanlychuyenmuc m-3">
+                <i class="fa-solid fa-list text-light"></i>
+                @Html.ActionLink("Quản Lý Chuyên Mục", "Index", "Danh_muc" , new { Area = "AdminArea" }, new { @class = "btn btn-success m-3" })
+            </div>
+
+
+            <div class="QuanlyUser m-3">
+                <i class="fa-solid fa-users-viewfinder text-light"></i>
+                @Html.ActionLink("Quản Lý Users", "Index", "Users", new { Area = "AdminArea" } , new { @class = "btn btn-danger m-3" })
+            </div>
+
+
+        </div>
+
+        <div class="col col-10 mh-100">
+            <header class="">
+                <nav class="d-flex justify-content-between mt-4 mb-4 align-items-center bg-dark">
+                    <div class="nav-left nav-item">
+                        <a class="logo text-decoration-none  text-light" style="margin : 0 20px"> Logo </a>
+                    </div>
+
+                    <div class="nav-right nav-item d-flex align-items-center">
+                        <a class="user text-decoration-none align-items-center text-white " href="##" style="margin : 0 20px ; height : 25px">
+                            @if (Session["username"] != null)
+                            {
+                                <p> Welcome @Session["username"] </p>
+                                @Html.ActionLink("LogOut", "", "Users", new { Area = "AdminArea" }, new { @class = "btn btn-danger" })
+                            }
+                            else
+                            {
+                                @Html.ActionLink("SignIn", "Create", "Users", new {Area = "AdminArea"}, new { @class = "btn btn-primary m-4" })
+                                @Html.ActionLink("LogIn", "LogIn", "Users", new { Area = "AdminArea" } , new { @class = "btn btn-success m-4" })
+                            }
+                        </a>
+
+                            <a class="user text-decoration-none text-white" href="##" style="margin : 0 20px">
+                                <i class="fa-solid fa-bell"></i> Notifycation
+                            </a>
+                    </div>
+                </nav>
+            </header>
+
+            <hr />
+
+            <div class="container d-flex flex-column justify-content-center">
+                @RenderBody()
+            </div>
+
+            <hr />
+
+            <footer class="d-flex flex-column justify-content-end">
+                This Web Was Created By Nhóm 12
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+

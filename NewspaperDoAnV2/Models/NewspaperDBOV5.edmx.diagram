@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="114e5425df024822bdf52fea94a25f92" Name="Diagram1">
+        <EntityTypeShape EntityType="NewspaperV10Model.Comment" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV10Model.Danh_muc" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV10Model.Liked" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV10Model.Newspaper" Width="1.5" PointX="8.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV10Model.Phan_Quyen" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV10Model.User" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="NewspaperV10Model.FK__Comment__Newspap__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV10Model.FK__Comment__UserID__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV10Model.fk_danhmucid" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV10Model.FK__Liked__Newspaper__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV10Model.FK__Liked__UserID__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV10Model.FK__Newspaper__UserI__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV10Model.FK__Users__Role_id__398D8EEE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

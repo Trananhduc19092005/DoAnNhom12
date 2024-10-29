@@ -1,0 +1,31 @@
+﻿@model IEnumerable<NewspaperDoAnV2.Models.Newspaper>
+
+
+@{
+    ViewBag.Title = "BaiBao";
+    Layout = "~/Areas/UserArea/Views/Shared/_UserMasterLayout.cshtml";
+}
+
+
+
+@foreach (var items in Model)
+
+{
+    <h2 class="text-center">
+        @Html.DisplayFor(model => items.Newspaper_tieude)
+    </h2>
+
+    <h3 class="text-center">
+        @Html.DisplayFor(model => items.Newspaper_tieudephu)
+    </h3>
+
+    <img class="w-100 mt-4 mb-4" src="@Html.DisplayFor(model => items.Newspaper_anh)" />
+    <br />
+
+    <p style="line-height: 27px">
+        @Html.DisplayFor(model => items.Newspaper_noidung)
+    </p>
+
+}
+
+

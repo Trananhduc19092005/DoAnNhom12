@@ -1,0 +1,53 @@
+﻿@model NewspaperDoAnV2.Models.Newspaper
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/AdminArea/Views/Shared/_adminlayout.cshtml";
+}
+
+<h2> Chi Tiết Bài Báo </h2>
+
+<div>
+    <h4>Newspaper</h4>
+    <hr />
+    
+
+    <div class="card">
+        <div class="card-header">
+            <h4> Tiêu Đề </h4>
+            @Html.DisplayFor(model => model.Newspaper_tieude)
+        </div>
+
+        <div class="card-header">
+            <h4> Tiêu Đề Phụ </h4>
+            @Html.DisplayFor(model => model.Newspaper_tieudephu)
+        </div>
+
+        <div class="card-body">
+            <h4> Ảnh </h4>
+            @Html.DisplayFor(model => model.Newspaper_anh)
+        </div>
+
+        <div class="card-body">
+            <h4> Nội Dung </h4>
+            @Html.DisplayFor(model => model.Newspaper_noidung)
+        </div>
+
+        <div class="card-footer">
+            <h4> Người Viết </h4>
+            @Html.DisplayFor(model => model.User.UserName)
+        </div>
+
+
+        <div class="card-footer">
+            <h4> Danh Mục </h4>
+            @Html.DisplayFor(model => model.Danh_muc.danhmuc_noidung)
+        </div>
+
+
+    </div>
+</div>
+<p class="mt-3 mb-3">
+    @Html.ActionLink("Edit", "Edit", "Newspapers" , new { id = Model.NewspaperId } , new {@class = "btn btn-primary"}) |
+    @Html.ActionLink("Back to List", "Index" , " " , new { @class = "btn btn-success" })
+</p>

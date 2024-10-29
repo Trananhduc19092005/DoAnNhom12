@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35323.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewspaperDoAnV2", "NewspaperDoAnV2\NewspaperDoAnV2.csproj", "{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56B5F432-B693-4C53-8FB2-AD0A10A19600}
+	EndGlobalSection
+EndGlobal
