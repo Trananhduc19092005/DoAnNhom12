@@ -130,15 +130,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\AdminArea\AdminAreaAreaRegistration.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\AdminHomePageController.cs" />
     <Compile Include="Areas\AdminArea\Controllers\Danh_mucController.cs" />
     <Compile Include="Areas\AdminArea\Controllers\NewspapersController.cs" />
-    <Compile Include="Areas\AdminArea\Controllers\Phan_QuyenController.cs" />
     <Compile Include="Areas\AdminArea\Controllers\UsersController.cs" />
     <Compile Include="Areas\UserArea\Controllers\HomePageController.cs" />
-    <Compile Include="Areas\UserArea\Controllers\NewspaperContainer\BatDongSanController.cs" />
-    <Compile Include="Areas\UserArea\Controllers\NewspaperContainer\ChinhTriController.cs" />
-    <Compile Include="Areas\UserArea\Controllers\NewspaperContainer\CongNgheController.cs" />
-    <Compile Include="Areas\UserArea\Controllers\NewspaperContainer\ThaoThaoController.cs" />
     <Compile Include="Areas\UserArea\UserAreaAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -156,21 +152,6 @@
     <Compile Include="Models\Newspaper.cs">
       <DependentUpon>NewspaperV6.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\NewspaperDBOV5.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NewspaperDBOV5.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NewspaperDBOV5.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NewspaperDBOV5.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NewspaperDBOV5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NewspaperDBOV5.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\NewspaperV6.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -186,6 +167,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NewspaperV6.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Newspaper_ChuyenMuc.cs" />
     <Compile Include="Models\Phan_Quyen.cs">
       <DependentUpon>NewspaperV6.tt</DependentUpon>
     </Compile>
@@ -217,16 +199,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\NewspaperDBOV5.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NewspaperDBOV5.edmx</DependentUpon>
-      <LastGenOutput>NewspaperDBOV5.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\NewspaperDBOV5.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NewspaperDBOV5.edmx</DependentUpon>
-      <LastGenOutput>NewspaperDBOV5.cs</LastGenOutput>
-    </Content>
     <Content Include="Models\NewspaperV6.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>NewspaperV6.edmx</DependentUpon>
@@ -250,11 +222,6 @@
     <Content Include="Areas\AdminArea\Views\Newspapers\Details.cshtml" />
     <Content Include="Areas\AdminArea\Views\Newspapers\Edit.cshtml" />
     <Content Include="Areas\AdminArea\Views\Newspapers\Index.cshtml" />
-    <Content Include="Areas\AdminArea\Views\Phan_Quyen\Create.cshtml" />
-    <Content Include="Areas\AdminArea\Views\Phan_Quyen\Delete.cshtml" />
-    <Content Include="Areas\AdminArea\Views\Phan_Quyen\Details.cshtml" />
-    <Content Include="Areas\AdminArea\Views\Phan_Quyen\Edit.cshtml" />
-    <Content Include="Areas\AdminArea\Views\Phan_Quyen\Index.cshtml" />
     <Content Include="Areas\AdminArea\Views\Danh_muc\Create.cshtml" />
     <Content Include="Areas\AdminArea\Views\Danh_muc\Delete.cshtml" />
     <Content Include="Areas\AdminArea\Views\Danh_muc\Details.cshtml" />
@@ -268,13 +235,6 @@
     <Content Include="Areas\AdminArea\Views\Users\Login.cshtml" />
     <Content Include="Areas\UserArea\Views\web.config" />
     <Content Include="Areas\UserArea\Views\Shared\_UserMasterLayout.cshtml" />
-    <EntityDeploy Include="Models\NewspaperDBOV5.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NewspaperDBOV5.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\NewspaperDBOV5.edmx.diagram">
-      <DependentUpon>NewspaperDBOV5.edmx</DependentUpon>
-    </Content>
     <EntityDeploy Include="Models\NewspaperV6.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>NewspaperV6.Designer.cs</LastGenOutput>
@@ -282,17 +242,13 @@
     <Content Include="Models\NewspaperV6.edmx.diagram">
       <DependentUpon>NewspaperV6.edmx</DependentUpon>
     </Content>
-    <Content Include="Areas\UserArea\Views\ChinhTri\Index.cshtml" />
-    <Content Include="Areas\UserArea\Views\ChinhTri\BaiBao.cshtml" />
-    <Content Include="Areas\UserArea\Views\ThaoThao\Index.cshtml" />
-    <Content Include="Areas\UserArea\Views\ThaoThao\BaiBao.cshtml" />
-    <Content Include="Areas\UserArea\Views\CongNghe\Index.cshtml" />
-    <Content Include="Areas\UserArea\Views\CongNghe\BaiBao.cshtml" />
-    <Content Include="Areas\UserArea\Views\BatDongSan\Index.cshtml" />
-    <Content Include="Areas\UserArea\Views\BatDongSan\BaiBao.cshtml" />
     <Content Include="Areas\UserArea\Views\HomePage\HomePage.cshtml" />
     <Content Include="Areas\UserArea\Views\HomePage\BaiBao.cshtml" />
     <Content Include="Areas\UserArea\Views\HomePage\TheThao.cshtml" />
+    <Content Include="Areas\UserArea\Views\HomePage\BatDongSan.cshtml" />
+    <Content Include="Areas\UserArea\Views\HomePage\CongNghe.cshtml" />
+    <Content Include="Areas\UserArea\Views\HomePage\ChinhTri.cshtml" />
+    <Content Include="Areas\AdminArea\Views\AdminHomePage\Index.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />

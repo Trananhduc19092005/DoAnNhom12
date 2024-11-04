@@ -25,25 +25,27 @@
                 </div>
 
                 <div class="d-flex align-items-center header-right">
-                    <a class="p-2 text-decoration-none text-dark" href="#">Mới nhất</a>
-                    <a class="p-2 text-decoration-none text-dark" href="#">Tin Theo Khu Vực</a>
-                    <a class="p-2 text-decoration-none text-dark" href="#">International</a>
                     <div>
                         <a class="p-2 text-decoration-none text-dark" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                         <a class="p-2 text-decoration-none text-dark" href="#"><i class="fa-solid fa-user"></i> Đăng Nhập</a>
-                        <a class="p-2 text-decoration-none text-dark" href="#"><i class="fa-solid fa-bell"></i></a>
                     </div>
                 </div>
             </header>
 
 
-            <nav class="d-flex justify-content-around w-50">
-                @Html.ActionLink("Bất Động Sản", "Index", "BatDongSan", new {area = "UserArea"}, new { @class = "btn btn-primary" })
-                @Html.ActionLink("Chính Trị", "Index", "ChinhTri", new { area = "UserArea" } , new { @class = "btn btn-success" })
-                @Html.ActionLink("Công Nghệ", "Index", "CongNghe", new { area = "UserArea" }, new { @class = "btn btn-danger" })
-                @Html.ActionLink("Thể Thao", "Index", "ThaoThao", new { area = "UserArea" }, new { @class = "btn btn-warning" })
-                @Html.ActionLink("Giáo Dục", "Index", "", new { area = "UserArea" }, new { @class = "btn btn-primary" })
+            <nav class="d-flex justify-content-between w-100">
+                <div>
+                    @Html.ActionLink("Trang Chủ" , "HomePage" , "HomePage" , new {@class = "btn btn-success"})
+                </div>
 
+                <div>
+                    @Html.ActionLink("Bất Động Sản", "BatDongSan", "HomePage", new { area = "UserArea" }, new { @class = "btn btn-default BatDongSanBtn" })
+                    @Html.ActionLink("Chính Trị", "ChinhTri", "HomePage", new { area = "UserArea" }, new { @class = "btn btn-default ChinhTriBtn" })
+                    @Html.ActionLink("Công Nghệ", "CongNghe", "HomePage", new { area = "UserArea" }, new { @class = "btn btn-default CongNgheBtn" })
+                    @Html.ActionLink("Thể Thao", "TheThao", "HomePage", new { area = "UserArea" }, new { @class = "btn btn-default TheThaoBtn" })
+
+                </div>
+               
             </nav>
         </div>
 

@@ -67,7 +67,7 @@
                             @if (Session["username"] != null)
                             {
                                 <p> Welcome @Session["username"] </p>
-                                @Html.ActionLink("LogOut", "", "Users", new { Area = "AdminArea" }, new { @class = "btn btn-danger" })
+                                @Html.ActionLink("LogOut", "LogOut", "Users", new { Area = "AdminArea" }, new { @class = "btn btn-danger" })
                             }
                             else
                             {
@@ -75,10 +75,6 @@
                                 @Html.ActionLink("LogIn", "LogIn", "Users", new { Area = "AdminArea" } , new { @class = "btn btn-success m-4" })
                             }
                         </a>
-
-                            <a class="user text-decoration-none text-white" href="##" style="margin : 0 20px">
-                                <i class="fa-solid fa-bell"></i> Notifycation
-                            </a>
                     </div>
                 </nav>
             </header>

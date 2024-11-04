@@ -35,5 +35,20 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
         {
             return View(db.Newspapers.ToList());
         }
+
+        public ActionResult BatDongSan()
+        {
+            return View(db.Newspapers.ToList());
+        }
+
+        public ActionResult CongNghe()
+        {
+            return View(db.Newspapers.ToList());
+        }
+
+        public ActionResult ChinhTri()
+        {
+            return View(db.Newspapers.ToList());
+        }
     }
 }

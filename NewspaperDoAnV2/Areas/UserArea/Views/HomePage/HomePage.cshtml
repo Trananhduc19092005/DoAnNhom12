@@ -11,7 +11,9 @@
         padding: 40px;
     }
 </style>
-<h3 class="text-center"> HomePage </h3>
+
+<h3 class="text-center"> Trang Chủ </h3>
+
 @foreach (var items in Model)
 {
     
@@ -36,8 +38,8 @@
                         @Html.DisplayFor(model => items.Newspaper_noidung)
                     </p>
 
-                    <div class="position-absolute bottom-0">
-                        @Html.ActionLink("Đọc Thêm", "BaiBao","HomePage" , new { id = items.NewspaperId , area = "UserArea" }, new { @class = "btn btn-primary" })
+                    <div class="d-flex align-items-end">
+                        @Html.ActionLink("Đọc Thêm", "BaiBao", "HomePage", new { id = items.NewspaperId }, new { @class = "btn btn-primary" })
                     </div>
                 </div>
             </div>

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<NewspaperDoAnV2.Models.Newspaper_ChuyenMuc>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/AdminArea/Views/Shared/_adminlayout.cshtml";
+    var countnewspaper = 0;
+    var danhmuccount = 0;
+}
+
+<style>
+    .Newspaper_info , .Danh_muc
+    {
+        height : 100%;
+        border-radius : 20px;
+    }
+    .Newspaper_SoLuong , .Danh_muc_SoLuong {
+        height: 100px;
+        width: 300px;
+
+    }
+</style>
+
+@foreach (var list in Model)
+{
+    foreach (var newspaper in list.newspaperList)
+    {
+        if (Session["username"].ToString() == newspaper.User.UserName)
+        {
+            countnewspaper++;
+        }
+    }
+
+    foreach (var danhmuc in list.danhmucList)
+    {
+        danhmuccount++;
+    }
+}
+
+<div class="container d-flex justify-content-around">
+    <div class="Newspaper_SoLuong">
+        <div class="Newspaper_info d-flex flex-column justify-content-center align-items-center bg-primary text-light">
+            <p> Số Lượng Bài Báo Đã Viết  : @countnewspaper</p>
+        </div>
+    </div>
+
+    <div class="Danh_muc_SoLuong">
+        <div class="Danh_muc d-flex flex-column justify-content-center align-items-center bg-primary text-light">
+            <p> Số Lượng Danh Mục : @danhmuccount </p>
+        </div>
+    </div>
+</div>
+

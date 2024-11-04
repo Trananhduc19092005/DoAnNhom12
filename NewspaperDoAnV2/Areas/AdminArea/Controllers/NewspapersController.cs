@@ -71,12 +71,22 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Newspaper newspaper = db.Newspapers.Find(id);
+            User users = new User();
             if (newspaper == null)
             {
                 return HttpNotFound();
             }
+
+            string test = "";
+            if (newspaper.User.UserName == "duc19092005")
+            {
+                test = newspaper.User.UserName;
+            }
+
             ViewBag.danhmuc_id = new SelectList(db.Danh_muc, "danhmuc_id", "danhmuc_noidung", newspaper.danhmuc_id);
-            ViewBag.UserID = new SelectList(db.Users, "UserID", "UserName", newspaper.UserID);
+           
+            ViewBag.UserID = new SelectList(db.Users, "UserID", "UserName", test);
+            
             return View(newspaper);
         }
 
@@ -94,7 +104,6 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.danhmuc_id = new SelectList(db.Danh_muc, "danhmuc_id", "danhmuc_noidung", newspaper.danhmuc_id);
-            ViewBag.UserID = new SelectList(db.Users, "UserID", "UserName", newspaper.UserID);
             return View(newspaper);
         }
 

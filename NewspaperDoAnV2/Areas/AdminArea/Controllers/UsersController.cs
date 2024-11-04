@@ -54,6 +54,7 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         public ActionResult Create([Bind(Include = "UserID,UserName,UserPassword,UserRePassword,Repassword,UserEmail,Role_id")] User user)
         {
             var list = db.Users.Any(model => model.UserName == user.UserName);
+
             if (list)
             {
                 ViewBag.Message = "This Account Is Already Exist";
@@ -63,12 +64,15 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
             if (ModelState.IsValid)
             {
                if (!list)
-                {
+               {
+                    user.Role_id = 1;
+
                     db.Users.Add(user);
+
                     db.SaveChanges();
-                    Session.Clear();
+
                     return RedirectToAction("Login");
-                }
+               }
             }
 
             ViewBag.Role_id = new SelectList(db.Phan_Quyen, "Role_id", "Role_name", user.Role_id);
@@ -144,7 +148,7 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         }
 
 
-        // Login 
+        // Đăng Nhập 
 
         [HttpPost]
         public ActionResult Login(User Users_ThongTin)
@@ -153,12 +157,14 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
             {
                 Session["username"] = Users_ThongTin.UserName.ToString(); 
                 Session["userid"] = Users_ThongTin.UserID.ToString();
-                return RedirectToAction("Index" , "Users");
+                return RedirectToAction("Index" , "AdminHomePage");
             }
             return RedirectToAction("Login");
         }
 
-        // checklogin
+        // Kiểm tra đăng nhập
+
+
         public bool CheckLogin(User Users_ThongTin)
         {
             var check = db.Users.Where(x => x.UserName.Equals(Users_ThongTin.UserName) && x.UserPassword.Equals(Users_ThongTin.UserPassword)).FirstOrDefault();
@@ -168,6 +174,10 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
             }
             return false;
         }
+
+
+        // Đăng xuất
+
 
         public ActionResult LogOut()
         {

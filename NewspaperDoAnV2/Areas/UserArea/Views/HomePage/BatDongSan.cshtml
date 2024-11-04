@@ -9,10 +9,20 @@
         box-shadow: 0px 2px 5px 0px black;
         padding: 40px;
     }
+
+    .BatDongSanBtn {
+        background: #0B5ED7;
+        color: white;
+    }
+
+    .BatDongSanBtn:hover
+    {
+        color : white;
+    }
 </style>
 @foreach (var items in Model)
 {
-    if (items.Danh_muc.danhmuc_noidung == "Chính Trị")
+    if (items.Danh_muc.danhmuc_noidung == "Bất Động Sản")
     {
         <div class="mt-5 mb-5 boxes">
             <div class="row row-cols-2">
@@ -36,8 +46,8 @@
                         @Html.Raw(items.Newspaper_noidung.Replace(Environment.NewLine, "<br/>"))
                     </p>
 
-                    <div class="position-absolute bottom-0">
-                        @Html.ActionLink("Đọc Thêm", "BaiBao", "ChinhTri", new { id = items.NewspaperId }, new { @class = "btn btn-primary" })
+                    <div class="d-flex align-items-end">
+                        @Html.ActionLink("Đọc Thêm", "BaiBao", "HomePage", new { id = items.NewspaperId }, new { @class = "btn btn-primary" })
                     </div>
                 </div>
             </div>
