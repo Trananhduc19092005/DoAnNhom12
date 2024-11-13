@@ -1,5 +1,4 @@
-﻿@model  IEnumerable<NewspaperDoAnV2.Models.Newspaper>
-
+﻿
 @{
     Layout = null;
 }
@@ -14,19 +13,25 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
+    <style>
+        header
+        {
+            height : 200px;
+        }       
+    </style>
     <div class="home-layout">
         <div class="container">
             <header class="d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center header-left">
                     <div class="header-left-logo">
-                        <a><img src="https://i.pinimg.com/originals/60/fe/d2/60fed2d16d5a8dbe57dc3ab756ec5982.png" /></a>
+                        
                     </div>
                     <div class="header-left-datetime">@DateTime.Now</div>
                 </div>
 
                 <div class="d-flex align-items-center header-right">
                     <div>
-                        <a class="p-2 text-decoration-none text-dark" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a class="p-2 text-decoration-none text-dark" href="~/UserArea/HomePage/Search"> <i class="fa-solid fa-magnifying-glass"> </i> Tìm Kiếm </a>
                         <a class="p-2 text-decoration-none text-dark" href="#"><i class="fa-solid fa-user"></i> Đăng Nhập</a>
                     </div>
                 </div>
@@ -34,8 +39,10 @@
 
 
             <nav class="d-flex justify-content-between w-100">
-                <div>
-                    @Html.ActionLink("Trang Chủ" , "HomePage" , "HomePage" , new {@class = "btn btn-success"})
+                <div style="margin : 0 10px;">
+                    <a href="~/UserArea/HomePage/HomePage" class="text-decoration-none text-dark">
+                        <i class="fa-solid fa-house fs-5"></i>
+                    </a>
                 </div>
 
                 <div>
@@ -43,9 +50,7 @@
                     @Html.ActionLink("Chính Trị", "ChinhTri", "HomePage", new { area = "UserArea" }, new { @class = "btn btn-default ChinhTriBtn" })
                     @Html.ActionLink("Công Nghệ", "CongNghe", "HomePage", new { area = "UserArea" }, new { @class = "btn btn-default CongNgheBtn" })
                     @Html.ActionLink("Thể Thao", "TheThao", "HomePage", new { area = "UserArea" }, new { @class = "btn btn-default TheThaoBtn" })
-
                 </div>
-               
             </nav>
         </div>
 

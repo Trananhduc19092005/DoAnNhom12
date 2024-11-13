@@ -1,796 +1,577 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ASPNET MVC\\NewspaperDoAnV2\\",
+  "WorkspaceRootPath": "E:\\ASPNET MVC\\NewspaperDoAnV2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\newspaperv6.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\newspaperv6.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|d:\\aspnet mvc\\newspaperdoanv2\\newspaperdoanv2\\areas\\adminarea\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|e:\\aspnet mvc\\newspaperdoanv2\\newspaperdoanv2\\areas\\adminarea\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\adminhomepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\adminhomepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\controllers\\adminhomepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\controllers\\adminhomepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\newspaper_chuyenmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\newspaper_chuyenmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\newspaper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\newspaper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\newspaperv6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\newspaperv6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\phan_quyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\phan_quyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\sysdiagram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\sysdiagram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\liked.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\liked.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\danh_muc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\danh_muc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\controllers\\newspaperscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\controllers\\newspaperscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\controllers\\newspaperscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\baibao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\baibao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\chinhtri.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\chinhtri.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\batdongsan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\batdongsan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\thethao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\thethao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\controllers\\danh_muccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\controllers\\danh_muccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\controllers\\danh_muccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\congnghe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\congnghe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\shared\\_usermasterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\shared\\_usermasterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\adminareaarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\adminareaarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\newspaperv6.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\newspaperv6.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|e:\\aspnet mvc\\newspaperdoanv2\\newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\userareaarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\userareaarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|e:\\aspnet mvc\\newspaperdoanv2\\newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|e:\\aspnet mvc\\newspaperdoanv2\\newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|e:\\aspnet mvc\\newspaperdoanv2\\newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|D:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|e:\\aspnet mvc\\newspaperdoanv2\\newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NewspaperDoAnV2\\Models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|e:\\aspnet mvc\\newspaperdoanv2\\newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\danh_muc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|e:\\aspnet mvc\\newspaperdoanv2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\thethao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\thethao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\baibao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\baibao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\batdongsan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\batdongsan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\chinhtri.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\chinhtri.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\congnghe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\congnghe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\homepage\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\homepage\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\adminhomepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\adminhomepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\newspapersearch\\newspapersearchvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\newspapersearch\\newspapersearchvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\userarea\\views\\shared\\_usermasterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\userarea\\views\\shared\\_usermasterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\newspaper_chuyenmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\newspaper_chuyenmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\controllers\\adminhomepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\controllers\\adminhomepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\models\\newspaperv6.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\models\\newspaperv6.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|E:\\ASPNET MVC\\NewspaperDoAnV2\\newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3F758FC-C580-4EF5-A5F7-10A9469E0DD3}|NewspaperDoAnV2\\NewspaperDoAnV2.csproj|solutionrelative:newspaperdoanv2\\areas\\adminarea\\views\\newspapers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 100,
+      "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 29,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "NewspaperV6.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\NewspaperV6.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\NewspaperV6.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\NewspaperV6.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\NewspaperV6.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T14:54:08.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "sysdiagram.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\sysdiagram.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\sysdiagram.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\sysdiagram.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\sysdiagram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T14:54:07.033Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Phan_Quyen.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Phan_Quyen.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\Phan_Quyen.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Phan_Quyen.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\Phan_Quyen.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T14:53:56.321Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\AdminHomePage\\Index.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\AdminHomePage\\Index.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\AdminHomePage\\Index.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\AdminHomePage\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T05:09:27.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "model.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\model.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\model.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\model.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\model.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAkwAkAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T12:58:31.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Newspaper_ChuyenMuc.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Newspaper_ChuyenMuc.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\Newspaper_ChuyenMuc.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Newspaper_ChuyenMuc.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\Newspaper_ChuyenMuc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T05:06:30.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminHomePageController.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\AdminHomePageController.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\AdminHomePageController.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\AdminHomePageController.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\AdminHomePageController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T05:03:27.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ChinhTri.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\ChinhTri.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\ChinhTri.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\ChinhTri.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\ChinhTri.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAiwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T04:59:33.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "CongNghe.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\CongNghe.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\CongNghe.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\CongNghe.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\CongNghe.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAiwDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T04:59:23.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "BatDongSan.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BatDongSan.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BatDongSan.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BatDongSan.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BatDongSan.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAiwDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T04:59:14.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "HomePageController.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Controllers\\HomePageController.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Controllers\\HomePageController.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Controllers\\HomePageController.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Controllers\\HomePageController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAuwDIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T03:26:08.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "HomePage.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\HomePage.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\HomePage.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\HomePage.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\HomePage.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T03:27:54.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "TheThao.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\TheThao.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\TheThao.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\TheThao.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\TheThao.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T03:48:00.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "BaiBao.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BaiBao.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BaiBao.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BaiBao.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BaiBao.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T03:36:59.662Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "web.config",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\web.config",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\web.config",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\web.config",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-26T11:17:42.123Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAuwKAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:59:55.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "NewspaperV6.tt",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\NewspaperV6.tt",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\NewspaperV6.tt",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\NewspaperV6.tt",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\NewspaperV6.tt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-28T12:33:34.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NewspaperV6.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\NewspaperV6.edmx",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\NewspaperV6.edmx",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\NewspaperV6.edmx [Diagram1]",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\NewspaperV6.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-10-28T12:32:39.408Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Danh_mucController.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\Danh_mucController.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\Danh_mucController.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\Danh_mucController.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\Danh_mucController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:59:57.216Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_adminlayout.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Shared\\_adminlayout.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Shared\\_adminlayout.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Shared\\_adminlayout.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Shared\\_adminlayout.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEUAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T07:11:48.697Z",
+              "Title": "web.config",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\web.config",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\web.config",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\web.config",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-13T16:52:45.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Login.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Login.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Login.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Login.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAiwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T15:06:41.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "_UserMasterLayout.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\Shared\\_UserMasterLayout.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\Shared\\_UserMasterLayout.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\Shared\\_UserMasterLayout.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\Shared\\_UserMasterLayout.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-24T12:10:59.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Newspaper.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Newspaper.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\Newspaper.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Newspaper.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\Newspaper.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAwBoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:34:15.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Liked.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Liked.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\Liked.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Liked.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\Liked.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:34:14.609Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Danh_muc.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Danh_muc.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\Danh_muc.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Danh_muc.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\Danh_muc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:34:13.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Comment.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\Comment.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Comment.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\Comment.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T05:34:10.297Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T13:43:30.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Views\\Home\\About.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Views\\Home\\About.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Views\\Home\\About.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Views\\Home\\About.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-24T13:43:23.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "bootstrap.css",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Content\\bootstrap.css",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Content\\bootstrap.css",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Content\\bootstrap.css",
-              "RelativeToolTip": "NewspaperDoAnV2\\Content\\bootstrap.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-24T13:42:39.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "UserAreaAreaRegistration.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\UserAreaAreaRegistration.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\UserAreaAreaRegistration.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\UserAreaAreaRegistration.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\UserAreaAreaRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T12:09:32.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Create.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Create.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Create.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Create.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAFUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T07:12:42.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Delete.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Delete.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Delete.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Delete.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T16:03:00.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 9,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Details.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Details.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Details.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T16:02:59.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\User.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\User.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\User.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Models\\User.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAADgvycAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T15:42:15.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Edit.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Edit.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Edit.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Edit.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T15:08:26.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Index.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Index.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Index.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Index.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:54:55.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Create.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Create.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Create.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:54:54.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Index.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Index.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Index.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:44:06.163Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Edit.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Edit.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Edit.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Edit.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:44:05.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Delete.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Delete.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Delete.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Delete.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:44:01.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Details.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Details.cshtml",
               "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Details.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Details.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Details.cshtml",
               "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:44:01.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Create.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Create.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Create.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Create.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:44:00.198Z"
+              "WhenOpened": "2024-11-13T16:42:18.062Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Details.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Details.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Details.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Details.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:28:11.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Delete.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Delete.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Delete.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Delete.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Delete.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Delete.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Delete.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Delete.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:22:43.197Z"
+              "WhenOpened": "2024-11-13T16:41:23.927Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Edit.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Edit.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Edit.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Edit.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Edit.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Edit.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Edit.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:20:42.518Z"
+              "WhenOpened": "2024-11-13T16:40:10.732Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Index.cshtml",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Index.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Index.cshtml",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Index.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAE8AAAAKAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Delete.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Delete.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Delete.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Delete.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:00:22.448Z"
+              "WhenOpened": "2024-11-13T16:38:13.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Index.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Index.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Index.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Danh_muc\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T16:37:04.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Details.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Details.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Details.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Details.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T16:32:11.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "NewspaperSearchVM.cs",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\NewspaperSearch\\NewspaperSearchVM.cs",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\NewspaperSearch\\NewspaperSearchVM.cs",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\NewspaperSearch\\NewspaperSearchVM.cs",
+              "RelativeToolTip": "NewspaperDoAnV2\\Models\\NewspaperSearch\\NewspaperSearchVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T14:38:01.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\Search.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\Search.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\Search.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\Search.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T14:33:21.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Newspaper_ChuyenMuc.cs",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Newspaper_ChuyenMuc.cs",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\Newspaper_ChuyenMuc.cs",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\Newspaper_ChuyenMuc.cs",
+              "RelativeToolTip": "NewspaperDoAnV2\\Models\\Newspaper_ChuyenMuc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T14:26:15.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HomePageController.cs",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Controllers\\HomePageController.cs",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Controllers\\HomePageController.cs",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Controllers\\HomePageController.cs",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Controllers\\HomePageController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAuwFsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T10:16:44.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BatDongSan.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BatDongSan.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BatDongSan.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BatDongSan.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BatDongSan.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T03:54:36.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ChinhTri.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\ChinhTri.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\ChinhTri.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\ChinhTri.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\ChinhTri.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T03:54:32.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CongNghe.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\CongNghe.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\CongNghe.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\CongNghe.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\CongNghe.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T03:52:46.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TheThao.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\TheThao.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\TheThao.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\TheThao.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\TheThao.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T03:52:42.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaiBao.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BaiBao.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BaiBao.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BaiBao.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\BaiBao.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T03:38:47.793Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "NewspapersController.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\NewspapersController.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\NewspapersController.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\NewspapersController.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\NewspapersController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAuwIUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T07:12:39.27Z"
+              "Title": "_UserMasterLayout.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\Shared\\_UserMasterLayout.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\Shared\\_UserMasterLayout.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\Shared\\_UserMasterLayout.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\Shared\\_UserMasterLayout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T03:37:10.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "AdminAreaAreaRegistration.cs",
-              "DocumentMoniker": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\AdminAreaAreaRegistration.cs",
-              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\AdminAreaAreaRegistration.cs",
-              "ToolTip": "D:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\AdminAreaAreaRegistration.cs",
-              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\AdminAreaAreaRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "DocumentIndex": 30,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\User.cs",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\User.cs",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\User.cs",
+              "RelativeToolTip": "NewspaperDoAnV2\\Models\\User.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:53:21.671Z"
+              "WhenOpened": "2024-11-12T03:13:13.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "NewspaperV6.edmx [Diagram1]",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\NewspaperV6.edmx",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Models\\NewspaperV6.edmx",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Models\\NewspaperV6.edmx [Diagram1]",
+              "RelativeToolTip": "NewspaperDoAnV2\\Models\\NewspaperV6.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-11-12T03:13:04.722Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Edit.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Edit.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Edit.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T06:46:56.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\AdminHomePage\\Index.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\AdminHomePage\\Index.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\AdminHomePage\\Index.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\AdminHomePage\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T06:38:56.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\HomePage.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\HomePage.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\UserArea\\Views\\HomePage\\HomePage.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T12:29:04.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_adminlayout.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Shared\\_adminlayout.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Shared\\_adminlayout.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Shared\\_adminlayout.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Shared\\_adminlayout.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAEYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T11:46:00.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Index.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Index.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Index.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T06:06:36.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Create.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Create.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Create.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Newspapers\\Create.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T19:00:52.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Edit.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Edit.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T18:54:46.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Create.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Create.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T18:53:42.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Index.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T18:53:41.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Login.cshtml",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Login.cshtml",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Login.cshtml",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Views\\Users\\Login.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T18:53:40.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\UsersController.cs",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T18:53:06.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewspapersController.cs",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\NewspapersController.cs",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\NewspapersController.cs",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\NewspapersController.cs",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\NewspapersController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAAAHQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T18:53:06.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Danh_mucController.cs",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\Danh_mucController.cs",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\Danh_mucController.cs",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\Danh_mucController.cs",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\Danh_mucController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T18:53:05.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AdminHomePageController.cs",
+              "DocumentMoniker": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\AdminHomePageController.cs",
+              "RelativeDocumentMoniker": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\AdminHomePageController.cs",
+              "ToolTip": "E:\\ASPNET MVC\\NewspaperDoAnV2\\NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\AdminHomePageController.cs",
+              "RelativeToolTip": "NewspaperDoAnV2\\Areas\\AdminArea\\Controllers\\AdminHomePageController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAjwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T18:53:02.676Z"
             }
           ]
         }

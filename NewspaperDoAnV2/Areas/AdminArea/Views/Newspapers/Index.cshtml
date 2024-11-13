@@ -4,77 +4,79 @@
     ViewBag.Title = "Index";
     Layout = "~/Areas/AdminArea/Views/Shared/_adminlayout.cshtml";
 }
-
-<h2> Danh Sách </h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create", "Newspapers", new {area = "AdminArea" })
-</p>
-
-
-<table class="table table-dark">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Newspaper_tieude)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Newspaper_tieudephu)
-        </th>
-        <th>
-            <p>
-                @Html.DisplayNameFor(model => model.Newspaper_anh)
-            </p>
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Newspaper_noidung)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Danh_muc.danhmuc_noidung)
-        </th>
-        <th>
-            Người Viết Báo
-        </th>
-        <th> Option </th>
-    </tr>
-
-    @foreach (var item in Model)
+<style>
+    img
     {
-        if (Session["username"].ToString() == item.User.UserName)
-        {
-            <tr style="">
-                <td>
-                    <p style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3 ; width : 200px;">
-                        @Html.DisplayFor(modelItem => item.Newspaper_tieude)
-                    </p>
-                </td>
-                <td>
-                    <p style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3; width: 100px;">
-                        @Html.DisplayFor(model => item.Newspaper_tieudephu)
-                    </p>
-                </td>
-                <td>
-                    <p style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3; width: 100px;">
-                        @Html.DisplayFor(modelItem => item.Newspaper_anh, new { })
-                    </p>
-                </td>
-                <td>
-                    <p class="" style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3 ; width : 200px;">
-                        @Html.DisplayFor(modelItem => item.Newspaper_noidung)
-                    </p>
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Danh_muc.danhmuc_noidung)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.User.UserName)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.NewspaperId }, new { @class = "btn btn-primary" }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.NewspaperId }, new { @class = "btn btn-success" }) |
-                    @Html.ActionLink("Delete", "Delete", "Newspapers", new { id = item.NewspaperId }, new { @class = "btn btn-danger" })
-                </td>
-            </tr>
-        }
+        width : 200px;
     }
+</style>
 
-</table>  
+    <h2> Danh Sách </h2>
+
+    <p>
+        @Html.ActionLink("Tạo Bài Báo Mới", "Create", "Newspapers", new { area = "AdminArea" , @class = "btn btn-primary"})
+    </p>
+
+
+    <table class="table table-dark">
+        <tr>
+            <th>
+                Tiêu Đề
+            </th>
+            <th>
+                Tiêu Đề Phụ
+            </th>
+            <th>
+                Ảnh
+            </th>
+            <th>
+                Nội Dung
+            </th>
+            <th>
+                Danh Mục
+            </th>
+            <th>
+                Người Viết Báo
+            </th>
+            <th> Tùy Chọn </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            if (Session["username"].ToString() == item.User.UserName)
+            {
+                <tr style="">
+                    <td>
+                        <p style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3 ; width : 200px;">
+                            @Html.DisplayFor(modelItem => item.Newspaper_tieude)
+                        </p>
+                    </td>
+                    <td>
+                        <p style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3; width: 100px;">
+                            @Html.DisplayFor(model => item.Newspaper_tieudephu)
+                        </p>
+                    </td>
+                    <td>
+                        <img src="@Html.DisplayFor(modelItem => item.Newspaper_anh, new { })"  />
+                    </td>
+                    <td>
+                        <p class="" style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3 ; width : 200px;">
+                            @Html.DisplayFor(modelItem => item.Newspaper_noidung)
+                        </p>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Danh_muc.danhmuc_noidung)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.UserName)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Chỉnh Sửa", "Edit", new { id = item.NewspaperId }, new { @class = "btn btn-primary" }) |
+                        @Html.ActionLink("Thông Tin", "Details", new { id = item.NewspaperId }, new { @class = "btn btn-success" }) |
+                        @Html.ActionLink("Xóa", "Delete", "Newspapers", new { id = item.NewspaperId }, new { @class = "btn btn-danger" })
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>

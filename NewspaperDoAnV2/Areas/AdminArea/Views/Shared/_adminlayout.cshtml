@@ -49,7 +49,7 @@
 
             <div class="QuanlyUser m-3">
                 <i class="fa-solid fa-users-viewfinder text-light"></i>
-                @Html.ActionLink("Quản Lý Users", "Index", "Users", new { Area = "AdminArea" } , new { @class = "btn btn-danger m-3" })
+                @Html.ActionLink("Quản Lý Tài Khoản", "Index", "Users", new { Area = "AdminArea" } , new { @class = "btn btn-danger m-3" })
             </div>
 
 
@@ -66,8 +66,8 @@
                         <a class="user text-decoration-none align-items-center text-white " href="##" style="margin : 0 20px ; height : 25px">
                             @if (Session["username"] != null)
                             {
-                                <p> Welcome @Session["username"] </p>
-                                @Html.ActionLink("LogOut", "LogOut", "Users", new { Area = "AdminArea" }, new { @class = "btn btn-danger" })
+                                <p> Xin Chào @Session["username"] ! Bạn Muốn Làm Gì Hôm Nay ? </p>
+                                @Html.ActionLink("Đăng Xuất", "LogOut", "Users", new { Area = "AdminArea" }, new { @class = "btn btn-danger" })
                             }
                             else
                             {

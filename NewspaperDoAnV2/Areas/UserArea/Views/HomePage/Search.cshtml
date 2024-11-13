@@ -1,0 +1,76 @@
+﻿@model NewspaperDoAnV2.Models.NewspaperSearch.NewspaperSearchVM
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Areas/UserArea/Views/Shared/_UserMasterLayout.cshtml";
+}
+
+<style>
+    .dropdown a {
+        margin: 20px 20px 0 0;
+    }
+
+    .boxes {
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        padding: 40px;
+    }
+</style>
+
+@using (Html.BeginForm("Search", "HomePage"))
+{
+    <div class="d-flex">
+        <input type="search" name="search" value=@ViewBag.Search class="form-control" />
+        <input type="submit" value="Tìm Kiếm" class="btn btn-primary" />
+    </div>
+
+    <div class="dropdown">
+        @Html.ActionLink("Thể Thao", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "TheThao" }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Bất Động Sản", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "BatDongSan"}, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Chính Trị", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "ChinhTri"}, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Công Nghệ", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "CongNghe"}, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Xóa Tất Cả Tìm Kiếm", "Search", "HomePage", new { search = "", OrderByDanhMuc = "" }, new { @class = "btn btn-danger" })
+    </div>
+
+    <div class="OrderByName mt-3">
+        @Html.ActionLink("Sắp Xếp Tăng Dần Theo Tên Bài Báo", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = Model.NewspaperOrderByDanhMuc, OrderByName = "name_asc" }, new { @class = "btn btn-outline-success" })
+        @Html.ActionLink("Sắp Xếp Giảm Dần Theo Tên Bài Báo", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = Model.NewspaperOrderByDanhMuc, OrderByName = "name_desc" }, new { @class = "btn btn-outline-success" })
+    </div>
+}
+
+@foreach (var items in Model.newspaperlist)
+{
+
+    <div class="mt-5 mb-5 boxes">
+        <div class="row row-cols-2">
+            <div class="col col-6">
+                <img src="@Html.DisplayFor(model => items.Newspaper_anh)" class="w-100" />
+            </div>
+
+            <div class="col col-6 position-relative">
+
+                <h2>
+                    @Html.DisplayFor(model => items.Newspaper_tieude)
+                </h2>
+
+                <p class="mt-3">
+                    @Html.DisplayFor(model => items.Newspaper_tieudephu)
+                </p>
+
+
+                <p style="line-height: 36px; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3">
+                    @Html.DisplayFor(model => items.Newspaper_noidung)
+                </p>
+
+                <div class="position-absolute bottom-0 ">
+                    @Html.ActionLink("Đọc Thêm", "BaiBao", "HomePage", new { id = items.NewspaperId }, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+
+
+

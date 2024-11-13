@@ -15,12 +15,12 @@
     <tr>
 
         <th>
-            Id
+            Danh Mục Id
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.danhmuc_noidung)
+            Nội Dung Danh Mục
         </th>
-        <th> Option </th>
+        <th> Tùy Chọn </th>
     </tr>
 
 @foreach (var item in Model) {
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.danhmuc_noidung)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", "Danh_muc", new { id = item.danhmuc_id }, new { @class = "btn btn-primary" }) |
-            @Html.ActionLink("Details", "Details", "Danh_muc", new { id = item.danhmuc_id }, new { @class = "btn btn-success" }) |
-            @Html.ActionLink("Delete", "Delete", "Danh_muc", new { id = item.danhmuc_id }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Chỉnh Sửa", "Edit", "Danh_muc", new { id = item.danhmuc_id }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Chi Tiết", "Details", "Danh_muc", new { id = item.danhmuc_id }, new { @class = "btn btn-success" }) |
+            @Html.ActionLink("Xóa", "Delete", "Danh_muc", new { id = item.danhmuc_id }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

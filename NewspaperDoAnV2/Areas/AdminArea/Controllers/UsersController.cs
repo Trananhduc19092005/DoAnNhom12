@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.ModelBinding;
 using System.Web.Mvc;
+using System.Web.Security;
 using System.Web.UI.WebControls;
 using NewspaperDoAnV2.Models;
 
@@ -19,36 +20,25 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         // GET: AdminArea/Users
         public ActionResult Index()
         {
-            var users = db.Users.Include(u => u.Phan_Quyen);
-            return View(users.ToList());
+            try
+            {
+                var users = db.Users.Include(u => u.Phan_Quyen);
+                var username = Session["username"].ToString();
+                var GetUserName = db.Users.FirstOrDefault(x => x.UserName.Equals(username));
+                return View(GetUserName);
+            }
+            catch (Exception ex) 
+            {
+                return RedirectToAction("Login" , "Users");
+            }
         }
 
-        // GET: AdminArea/Users/Details/5
-
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            User user = db.Users.Find(id);
-            if (user == null)
-            {
-                return HttpNotFound();
-            }
-            return View(user);
-        }
-
-        // GET: AdminArea/Users/Create
         public ActionResult Create()
         {
             ViewBag.Role_id = new SelectList(db.Phan_Quyen, "Role_id", "Role_name");
             return View();
         }
 
-        // POST: AdminArea/Users/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "UserID,UserName,UserPassword,UserRePassword,Repassword,UserEmail,Role_id")] User user)
@@ -66,11 +56,8 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
                if (!list)
                {
                     user.Role_id = 1;
-
                     db.Users.Add(user);
-
                     db.SaveChanges();
-
                     return RedirectToAction("Login");
                }
             }
@@ -96,50 +83,22 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
             return View(user);
         }
 
-        // POST: AdminArea/Users/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        public ActionResult Edit([Bind(Include = "UserID,UserName,UserPassword,Role_id")] User user)
+        public ActionResult Edit(User user)
         {
             if (ModelState.IsValid)
             {
+                user.UserID = Convert.ToInt32(Session["UserId"].ToString());
+                user.Role_id = 1;
+                user.UserName = Session["username"].ToString();
+                user.UserEmail = Session["UserEmail"].ToString();
                 db.Entry(user).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.Role_id = new SelectList(db.Phan_Quyen, "Role_id", "Role_name", user.Role_id);
             return View(user);
-        }
-
-        // GET: AdminArea/Users/Delete/5
-        
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            User user = db.Users.Find(id);
-            if (user == null)
-            {
-                return HttpNotFound();
-            }
-            return View(user);
-        }
-
-        // POST: AdminArea/Users/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-
-        public ActionResult DeleteConfirmed(int id)
-        {
-            User user = db.Users.Find(id);
-            db.Users.Remove(user);
-            db.SaveChanges();
-            return RedirectToAction("Index");
         }
 
         public ActionResult Login()
@@ -155,9 +114,34 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         {
             if (CheckLogin(Users_ThongTin))
             {
-                Session["username"] = Users_ThongTin.UserName.ToString(); 
-                Session["userid"] = Users_ThongTin.UserID.ToString();
-                return RedirectToAction("Index" , "AdminHomePage");
+                // Lưu Session UserName
+
+                Session["username"] = Users_ThongTin.UserName.ToString();
+
+                // Lưu Thông Tin UserName Để Truy Vấn
+
+                var username = Session["username"].ToString();
+
+                // Truy Vấn Để Lấy UserId và UserEmail
+
+                var UserId = db.Users.Where(x => x.UserName.Equals(username)).FirstOrDefault().UserID;
+                var UserEmail = db.Users.Where(x => x.UserName.Equals(username)).FirstOrDefault().UserEmail;
+
+                // Lưu Session UserId và Email
+
+                Session["UserId"] = UserId;
+                Session["UserEmail"] = UserEmail;
+                
+
+                // Cho User Một Session
+
+                Users_ThongTin.Role_id = 1;
+
+                // Lưu Quyền User vào Session
+
+                Session["Roles"] = Users_ThongTin.Role_id.ToString();
+                FormsAuthentication.SetAuthCookie(Users_ThongTin.UserName, false);
+                return RedirectToAction("Index", "AdminHomePage");
             }
             return RedirectToAction("Login");
         }
@@ -165,9 +149,9 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         // Kiểm tra đăng nhập
 
 
-        public bool CheckLogin(User Users_ThongTin)
+        private bool CheckLogin(User Users_ThongTin)
         {
-            var check = db.Users.Where(x => x.UserName.Equals(Users_ThongTin.UserName) && x.UserPassword.Equals(Users_ThongTin.UserPassword)).FirstOrDefault();
+            var check = db.Users.Where(x => x.UserName.Equals(Users_ThongTin.UserName) && x.UserPassword.Equals(Users_ThongTin.UserPassword) && x.Role_id == 1).FirstOrDefault();
             if (check != null) 
             {
                 return true;

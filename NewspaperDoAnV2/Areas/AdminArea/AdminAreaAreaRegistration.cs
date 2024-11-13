@@ -19,6 +19,8 @@ namespace NewspaperDoAnV2.Areas.AdminArea
                 "AdminArea/{controller}/{action}/{id}",
                 new { controller = "Users" ,action = "LogIn", id = "" }
             );
+
+            
         }
     }
 }

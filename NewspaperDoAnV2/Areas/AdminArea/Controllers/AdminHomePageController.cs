@@ -11,8 +11,9 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
     public class AdminHomePageController : Controller
     {
         NewspaperV13Entities db = new NewspaperV13Entities();
-        
+
         // GET: AdminArea/AdminHomePage
+
         public ActionResult Index()
         {
             var items = new Newspaper_ChuyenMuc

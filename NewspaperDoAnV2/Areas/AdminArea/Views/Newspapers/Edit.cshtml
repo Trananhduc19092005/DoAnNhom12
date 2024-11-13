@@ -58,14 +58,6 @@
 
         <div class="card-footer">
             <div class="form-group">
-                <p class="mt-3"> Người Viết </p>
-                <div class="col-md-10">
-                    @Html.DropDownList("UserID", null, htmlAttributes: new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.UserID, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
                 <p class="mt-3"> Danh Mục </p>
                 <div class="col-md-10">
                     @Html.DropDownList("danhmuc_id", null, htmlAttributes: new { @class = "form-control" })
@@ -79,12 +71,12 @@
 
         <div class="form-group mt-3 mb-3">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Lưu" class="btn btn-primary" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index" , " " , new {@class = "btn btn-success"})
+    @Html.ActionLink("Quay Lại Danh Sách", "Index" , " " , new {@class = "btn btn-success"})
 </div>

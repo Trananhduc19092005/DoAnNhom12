@@ -5,23 +5,24 @@
     Layout = "~/Areas/AdminArea/Views/Shared/_adminlayout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>Thông Tin Danh Mục</h2>
 
 <div>
-    <h4>Danh_muc</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.danhmuc_noidung)
+            Nội Dung Danh Mục
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.danhmuc_noidung)
+            <p class="bg-primary text-light w-25 p-3 mt-3" style="border-radius : 20px;">
+                @Html.DisplayFor(model => model.danhmuc_noidung)
+            </p>
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit" , "Danh_muc" , new { id = Model.danhmuc_id } , new {@class  = "btn btn-primary" }) |
-    @Html.ActionLink("Back to List", "Index" , "Danh_muc", new {@class = "btn btn-success"})
+    @Html.ActionLink("Chỉnh Sửa Danh Mục", "Edit" , "Danh_muc" , new { id = Model.danhmuc_id } , new {@class  = "btn btn-primary" }) |
+    @Html.ActionLink("Quay Trở Về Danh Sách Danh Mục", "Index" , "Danh_muc", new {@class = "btn btn-success"})
 </p>

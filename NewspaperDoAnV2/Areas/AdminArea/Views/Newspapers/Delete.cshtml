@@ -7,9 +7,8 @@
 
 <h2> Xóa Bài Báo </h2>
 
-<h3> Bạn Có Chắc Chắn Rằng Bạn Muốn xóa bài báo này không </h3>
+<h3> Bạn Có Chắc Chắn Rằng Bạn Muốn xóa bài báo này không ? </h3>
 <div>
-    <h4>Newspaper</h4>
     <hr />
     <div class="card">
         <div class="card-header">
@@ -54,8 +53,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color mt-3">
-            <input type="submit" value="Delete" class="btn btn-danger" /> |
-            @Html.ActionLink("Back to List", "Index" , "" , new {@class = "btn btn-success"} )
+            <input type="submit" value="Xác Nhận Xóa" class="btn btn-danger" /> |
+            @Html.ActionLink("Quay Trở Lại Danh Sách", "Index" , "" , new {@class = "btn btn-success"} )
         </div>
     }
 </div>

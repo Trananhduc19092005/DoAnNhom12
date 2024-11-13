@@ -24,14 +24,15 @@
         </div>
 
         <div class="card-body">
-            <h4> Ảnh </h4>
-            @Html.DisplayFor(model => model.Newspaper_anh)
-        </div>
-
-        <div class="card-body">
             <h4> Nội Dung </h4>
             @Html.DisplayFor(model => model.Newspaper_noidung)
         </div>
+
+
+        <div class="card-body">
+            <img src="@Html.DisplayFor(model => model.Newspaper_anh)" class="w-100" />
+        </div>
+
 
         <div class="card-footer">
             <h4> Người Viết </h4>
@@ -48,6 +49,6 @@
     </div>
 </div>
 <p class="mt-3 mb-3">
-    @Html.ActionLink("Edit", "Edit", "Newspapers" , new { id = Model.NewspaperId } , new {@class = "btn btn-primary"}) |
-    @Html.ActionLink("Back to List", "Index" , " " , new { @class = "btn btn-success" })
+    @Html.ActionLink("Chỉnh Sửa Bài Báo", "Edit", "Newspapers" , new { id = Model.NewspaperId } , new {@class = "btn btn-primary"}) |
+    @Html.ActionLink("Quay Trở Lại Danh Sách", "Index" , " " , new { @class = "btn btn-success" })
 </p>

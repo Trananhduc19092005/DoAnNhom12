@@ -164,3 +164,4 @@ E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\obj\Debug\NewspaperDoAnV2.csproj.C
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\obj\Debug\Newspape.71C8D889.Up2Date
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\obj\Debug\NewspaperDoAnV2.dll
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\obj\Debug\NewspaperDoAnV2.pdb
+E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\bin\AuthPackage.dll

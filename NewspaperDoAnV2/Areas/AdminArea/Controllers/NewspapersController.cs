@@ -50,11 +50,21 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateInput(false)]
-        public ActionResult Create([Bind(Include = "NewspaperId,Newspaper_tieude,Newspaper_tieudephu,Newspaper_anh,Newspaper_noidung,UserID,danhmuc_id")] Newspaper newspaper)
+        public ActionResult Create(Newspaper newspaper)
         {
             if (ModelState.IsValid)
             {
-                db.Newspapers.Add(newspaper);
+                var new_newspaper = new Newspaper()
+                {
+                    NewspaperId = newspaper.NewspaperId ,
+                    Newspaper_tieude = newspaper.Newspaper_tieude,
+                    Newspaper_tieudephu = newspaper.Newspaper_tieudephu ,
+                    Newspaper_anh = newspaper.Newspaper_anh,
+                    Newspaper_noidung = newspaper.Newspaper_noidung,
+                    UserID = Convert.ToInt32(Session["UserId"].ToString()) ,
+                    danhmuc_id = newspaper.danhmuc_id
+                };
+                db.Newspapers.Add(new_newspaper);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }           
@@ -99,6 +109,7 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         {
             if (ModelState.IsValid)
             {
+                newspaper.UserID = Convert.ToInt32(Session["UserId"].ToString());
                 db.Entry(newspaper).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
