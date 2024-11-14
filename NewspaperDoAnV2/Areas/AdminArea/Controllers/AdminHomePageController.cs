@@ -16,16 +16,23 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
 
         public ActionResult Index()
         {
-            var items = new Newspaper_ChuyenMuc
+            try
             {
-                danhmucList = db.Danh_muc.ToList(),
-                newspaperList = db.Newspapers.ToList(),
-            };
-            List<Newspaper_ChuyenMuc> List = new List<Newspaper_ChuyenMuc>
-            {
-                items
-            };
-            return View(List.AsEnumerable());
+                var items = new Newspaper_ChuyenMuc
+                {
+                    danhmucList = db.Danh_muc.ToList(),
+                    newspaperList = db.Newspapers.ToList(),
+                };
+                List<Newspaper_ChuyenMuc> List = new List<Newspaper_ChuyenMuc>
+                {
+                    items
+                };
+                return View(List.AsEnumerable());
+            }
+            catch (Exception ex) {
+                return RedirectToAction("Login", "Users");
+            }
+
         }
     }
 }

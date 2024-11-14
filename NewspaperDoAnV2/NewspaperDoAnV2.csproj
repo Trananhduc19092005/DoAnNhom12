@@ -136,10 +136,9 @@
     <Compile Include="Areas\AdminArea\Controllers\AdminHomePageController.cs" />
     <Compile Include="Areas\AdminArea\Controllers\Danh_mucController.cs" />
     <Compile Include="Areas\AdminArea\Controllers\NewspapersController.cs" />
-    <Compile Include="Areas\AdminArea\Controllers\UsersController.cs" />
     <Compile Include="Areas\UserArea\Controllers\HomePageController.cs" />
     <Compile Include="Areas\UserArea\UserAreaAreaRegistration.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LogInSignUpController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -155,6 +154,7 @@
     <Compile Include="Models\Newspaper.cs">
       <DependentUpon>NewspaperV6.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\NewspaperComment\NewspaperComment.cs" />
     <Compile Include="Models\NewspaperSearch\NewspaperSearchVM.cs" />
     <Compile Include="Models\NewspaperV6.Context.cs">
       <AutoGen>True</AutoGen>
@@ -231,10 +231,6 @@
     <Content Include="Areas\AdminArea\Views\Danh_muc\Details.cshtml" />
     <Content Include="Areas\AdminArea\Views\Danh_muc\Edit.cshtml" />
     <Content Include="Areas\AdminArea\Views\Danh_muc\Index.cshtml" />
-    <Content Include="Areas\AdminArea\Views\Users\Create.cshtml" />
-    <Content Include="Areas\AdminArea\Views\Users\Edit.cshtml" />
-    <Content Include="Areas\AdminArea\Views\Users\Index.cshtml" />
-    <Content Include="Areas\AdminArea\Views\Users\Login.cshtml" />
     <Content Include="Areas\UserArea\Views\web.config" />
     <Content Include="Areas\UserArea\Views\Shared\_UserMasterLayout.cshtml" />
     <EntityDeploy Include="Models\NewspaperV6.edmx">
@@ -252,6 +248,7 @@
     <Content Include="Areas\UserArea\Views\HomePage\ChinhTri.cshtml" />
     <Content Include="Areas\AdminArea\Views\AdminHomePage\Index.cshtml" />
     <Content Include="Areas\UserArea\Views\HomePage\Search.cshtml" />
+    <Content Include="Areas\UserArea\Views\HomePage\DangCommentLenBaiBao.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -274,9 +271,10 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\LogInSignUp\Login.cshtml" />
+    <Content Include="Views\LogInSignUp\Create.cshtml" />
+    <Content Include="Views\LogInSignUp\Index.cshtml" />
+    <Content Include="Views\LogInSignUp\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

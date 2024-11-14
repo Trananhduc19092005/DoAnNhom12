@@ -19,16 +19,17 @@
 @using (Html.BeginForm("Search", "HomePage"))
 {
     <div class="d-flex">
-        <input type="search" name="search" value=@ViewBag.Search class="form-control" />
+        <input type="search" name="search" value=@ViewBag.Search class="form-control" placeholder="Nhập Tên Báo Để Tìm Kiếm"/>
         <input type="submit" value="Tìm Kiếm" class="btn btn-primary" />
     </div>
 
     <div class="dropdown">
         @Html.ActionLink("Thể Thao", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "TheThao" }, new { @class = "btn btn-primary" })
-        @Html.ActionLink("Bất Động Sản", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "BatDongSan"}, new { @class = "btn btn-primary" })
-        @Html.ActionLink("Chính Trị", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "ChinhTri"}, new { @class = "btn btn-primary" })
-        @Html.ActionLink("Công Nghệ", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "CongNghe"}, new { @class = "btn btn-primary" })
-        @Html.ActionLink("Xóa Tất Cả Tìm Kiếm", "Search", "HomePage", new { search = "", OrderByDanhMuc = "" }, new { @class = "btn btn-danger" })
+        @Html.ActionLink("Bất Động Sản", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "BatDongSan" }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Chính Trị", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "ChinhTri" }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Công Nghệ", "Search", "HomePage", new { search = Model.NewspaperName, OrderByDanhMuc = "CongNghe" }, new { @class = "btn btn-primary" })
+        <a href="@Url.Action("Search", "HomePage", new { search = "", OrderByDanhMuc = "" })" class="btn btn-outline-danger"> Xóa Tất Cả Thông Tin Tìm Kiếm</a>
+
     </div>
 
     <div class="OrderByName mt-3">

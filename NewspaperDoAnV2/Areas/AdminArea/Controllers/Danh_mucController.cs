@@ -17,7 +17,11 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         // GET: AdminArea/Danh_muc
         public ActionResult Index()
         {
-            return View(db.Danh_muc.ToList());
+            if (Session["username"].ToString() != null)
+            {
+                return View(db.Danh_muc.ToList());
+            }
+            return RedirectToAction("Login", "LogInSignUp");
         }
 
         // GET: AdminArea/Danh_muc/Details/5

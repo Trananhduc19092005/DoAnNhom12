@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using System.Data.Entity;
 using NewspaperDoAnV2.Models;
 using NewspaperDoAnV2.Models.NewspaperSearch;
+using NewspaperDoAnV2.Models.NewspaperComment;
+using System.Web.Routing;
 
 namespace NewspaperDoAnV2.Areas.UserArea.Controllers
 {
@@ -30,14 +32,42 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
 
         public ActionResult BaiBao(int? id)
         {
-            var Find = db.Newspapers.Find(id);
+            var NewspaperFind = db.Newspapers.Where(x => x.NewspaperId == id);
+            var CommentFind = db.Comments.Where(x => x.NewspaperId == id);
+            Session["NewspaperID"] = id;
 
-            List<Newspaper> newspapaerList = new List<Newspaper>
+            var NewspaperComment = new NewspaperComment()
             {
-                Find
+                comments = CommentFind.ToList(),
+                newspapers = NewspaperFind.ToList(),
             };
+            return View(NewspaperComment);
+        }
 
-            return View(newspapaerList.AsEnumerable());
+
+        [HttpPost]
+        public ActionResult DangCommentLenBaiBao(string Noidung)
+        {
+            var FindNewspaperId = Convert.ToInt32(Session["NewspaperID"].ToString());
+            var New_newcomment = new Comment()
+            {
+                comment_noidung = Noidung,
+
+                // Cho UserId bằng với Session["userid] nếu người dùng đăng nhập
+
+                UserID = Convert.ToInt32(Session["UserId"].ToString()),
+                NewspaperId = FindNewspaperId
+            };
+            db.Comments.Add(New_newcomment);
+            db.SaveChanges();
+            return RedirectToAction("BaiBao",
+                    new RouteValueDictionary(
+                        new
+                        {
+                            controller = "HomePage",
+                            action = "BaiBao",
+                            id = Convert.ToInt32(Session["NewspaperID"].ToString())
+                        }));
         }
 
 

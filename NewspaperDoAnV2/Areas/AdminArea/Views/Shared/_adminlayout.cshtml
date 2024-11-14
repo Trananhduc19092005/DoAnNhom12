@@ -49,7 +49,9 @@
 
             <div class="QuanlyUser m-3">
                 <i class="fa-solid fa-users-viewfinder text-light"></i>
-                @Html.ActionLink("Quản Lý Tài Khoản", "Index", "Users", new { Area = "AdminArea" } , new { @class = "btn btn-danger m-3" })
+                <a href="/LogInSignUp/Index" class="btn btn-danger m-3">
+                    Quản Lý Tài Khoản
+                </a>
             </div>
 
 
@@ -63,18 +65,15 @@
                     </div>
 
                     <div class="nav-right nav-item d-flex align-items-center">
-                        <a class="user text-decoration-none align-items-center text-white " href="##" style="margin : 0 20px ; height : 25px">
-                            @if (Session["username"] != null)
-                            {
-                                <p> Xin Chào @Session["username"] ! Bạn Muốn Làm Gì Hôm Nay ? </p>
-                                @Html.ActionLink("Đăng Xuất", "LogOut", "Users", new { Area = "AdminArea" }, new { @class = "btn btn-danger" })
-                            }
-                            else
-                            {
-                                @Html.ActionLink("SignIn", "Create", "Users", new {Area = "AdminArea"}, new { @class = "btn btn-primary m-4" })
-                                @Html.ActionLink("LogIn", "LogIn", "Users", new { Area = "AdminArea" } , new { @class = "btn btn-success m-4" })
-                            }
-                        </a>
+                        @if (Session["username"] != null)
+                        {
+                            <a href="##" class="text-light text-decoration-none" style="margin-right : 20px">
+                                Xin Chào @Session["username"] ! Bạn Muốn Làm Gì Hôm Nay ? 
+                            </a>
+                            <a href="/LogInSignUp/LogOut" class="btn btn-danger">
+                                Đăng Xuất
+                            </a>
+                        }
                     </div>
                 </nav>
             </header>
