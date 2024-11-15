@@ -8,6 +8,7 @@
     <Property Name="comment_noidung" Type="nvarchar" MaxLength="500" />
     <Property Name="UserID" Type="int" />
     <Property Name="NewspaperId" Type="int" />
+    <Property Name="ThoiDiem_Comment" Type="datetime" />
   </EntityType>
   <EntityType Name="Danh_muc">
     <Key>

@@ -10,6 +10,7 @@
     <Property Name="NewspaperId" Type="Int32" />
     <NavigationProperty Name="Newspaper" Relationship="Self.FK__Comment__Newspap__571DF1D5" FromRole="Comment" ToRole="Newspaper" />
     <NavigationProperty Name="User" Relationship="Self.FK__Comment__UserID__5629CD9C" FromRole="Comment" ToRole="Users" />
+    <Property Name="ThoiDiem_Comment" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="Danh_muc">
     <Key>

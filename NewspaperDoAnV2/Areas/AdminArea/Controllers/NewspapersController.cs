@@ -17,31 +17,43 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         // GET: AdminArea/Newspapers
         public ActionResult Index()
         {
-            var newspapers = db.Newspapers.Include(n => n.Danh_muc).Include(n => n.User);
-            return View(newspapers.ToList());
+            if (IsAdmin_IsLogin())
+            {
+                var newspapers = db.Newspapers.Include(n => n.Danh_muc).Include(n => n.User);
+                return View(newspapers.ToList());
+            }
+            return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
 
         // GET: AdminArea/Newspapers/Details/5
         public ActionResult Details(int? id)
         {
-            if (id == null)
+            if (IsAdmin_IsLogin())
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                if (id == null)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                Newspaper newspaper = db.Newspapers.Find(id);
+                if (newspaper == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(newspaper);
             }
-            Newspaper newspaper = db.Newspapers.Find(id);
-            if (newspaper == null)
-            {
-                return HttpNotFound();
-            }
-            return View(newspaper);
+            return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
 
         // GET: AdminArea/Newspapers/Create
         public ActionResult Create()
         {
-            ViewBag.danhmuc_id = new SelectList(db.Danh_muc, "danhmuc_id", "danhmuc_noidung");
-            ViewBag.UserID = new SelectList(db.Users, "UserID", "UserName");
-            return View();
+            if (IsAdmin_IsLogin())
+            {
+                ViewBag.danhmuc_id = new SelectList(db.Danh_muc, "danhmuc_id", "danhmuc_noidung");
+                ViewBag.UserID = new SelectList(db.Users, "UserID", "UserName");
+                return View();
+            }
+            return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
 
         // POST: AdminArea/Newspapers/Create
@@ -76,28 +88,32 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
 
         public ActionResult Edit(int? id)
         {
-            if (id == null)
+            if (IsAdmin_IsLogin())
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Newspaper newspaper = db.Newspapers.Find(id);
-            User users = new User();
-            if (newspaper == null)
-            {
-                return HttpNotFound();
-            }
+                if (id == null)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                Newspaper newspaper = db.Newspapers.Find(id);
+                User users = new User();
+                if (newspaper == null)
+                {
+                    return HttpNotFound();
+                }
 
-            string test = "";
-            if (newspaper.User.UserName == "duc19092005")
-            {
-                test = newspaper.User.UserName;
-            }
+                string test = "";
+                if (newspaper.User.UserName == "duc19092005")
+                {
+                    test = newspaper.User.UserName;
+                }
 
-            ViewBag.danhmuc_id = new SelectList(db.Danh_muc, "danhmuc_id", "danhmuc_noidung", newspaper.danhmuc_id);
-           
-            ViewBag.UserID = new SelectList(db.Users, "UserID", "UserName", test);
-            
-            return View(newspaper);
+                ViewBag.danhmuc_id = new SelectList(db.Danh_muc, "danhmuc_id", "danhmuc_noidung", newspaper.danhmuc_id);
+
+                ViewBag.UserID = new SelectList(db.Users, "UserID", "UserName", test);
+
+                return View(newspaper);
+            }
+            return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
 
         // POST: AdminArea/Newspapers/Edit/5
@@ -121,16 +137,20 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         // GET: AdminArea/Newspapers/Delete/5
         public ActionResult Delete(int? id)
         {
-            if (id == null)
+            if (IsAdmin_IsLogin())
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                if (id == null)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                Newspaper newspaper = db.Newspapers.Find(id);
+                if (newspaper == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(newspaper);
             }
-            Newspaper newspaper = db.Newspapers.Find(id);
-            if (newspaper == null)
-            {
-                return HttpNotFound();
-            }
-            return View(newspaper);
+            return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
 
         // POST: AdminArea/Newspapers/Delete/5
@@ -151,6 +171,15 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public bool IsAdmin_IsLogin()
+        {
+            if (Session["username"] != null && Convert.ToInt32(Session["Roles"]) == 1 && Session["Roles"] != null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

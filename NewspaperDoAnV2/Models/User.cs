@@ -24,16 +24,20 @@ namespace NewspaperDoAnV2.Models
         }
     
         public int UserID { get; set; }
+
+        [Required(ErrorMessage = "Ô Này Không Được Để Trống")]
         public string UserName { get; set; }
 
+        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "Ô Này Không Được Để Trống")]
         public string UserEmail { get; set; }
 
         [DataType(DataType.Password)]
-        [Required(ErrorMessage = "Không Được Để Trống")]
+        [Required(ErrorMessage = "Ô Này Không Được Để Trống")]
         public string UserPassword { get; set; }
 
         [DataType(DataType.Password)]
-        [Compare("UserPassword", ErrorMessage = "Mật Khẩu Không Trùng")]
+        [Compare("UserPassword" , ErrorMessage = "Mật Khẩu Không Trùng Vui Lòng Kiểm Tra Lại ! ")]
 
         public string Repassword { get; set; }
         public int Role_id { get; set; }

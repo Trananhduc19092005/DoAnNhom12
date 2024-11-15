@@ -19,7 +19,7 @@
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         padding: 40px;
         display: flex;
-        height : 400px;
+        height : 450px;
     }
 
     img {
@@ -28,7 +28,7 @@
     }
 
     .form-group {
-        width: 500px;
+        width: 420px;
     }
 </style>
 
@@ -50,12 +50,13 @@
                     @Html.EditorFor(model => model.UserPassword, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.UserPassword, "", new { @class = "text-danger" })
 
-                    
+
                     <div class="d-flex justify-content-between mt-4">
                         <input type="submit" value="Đăng Nhập" class="btn btn-primary" />
-                        <div>
-                            @Html.ActionLink("Bạn Chưa Có Tài Khoản ? Đăng Kí Ở Đây", "Create", "", new { @class = "btn btn-success" })
-                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        @Html.ActionLink("Bạn Chưa Có Tài Khoản ? Đăng Kí Ở Đây", "Create", "", new { @class = "btn btn-success" })
                     </div>
                 </div>
             </div>

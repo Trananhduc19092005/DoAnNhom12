@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Comments">
       <EntityTypeMapping TypeName="NewspaperV13Model.Comment">
         <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="ThoiDiem_Comment" ColumnName="ThoiDiem_Comment" />
           <ScalarProperty Name="commentid" ColumnName="commentid" />
           <ScalarProperty Name="comment_noidung" ColumnName="comment_noidung" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />

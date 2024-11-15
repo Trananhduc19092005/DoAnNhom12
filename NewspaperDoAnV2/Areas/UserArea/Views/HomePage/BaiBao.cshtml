@@ -2,12 +2,18 @@
 @{
     ViewBag.Title = "BaiBao";
     Layout = "~/Areas/UserArea/Views/Shared/_UserMasterLayout.cshtml";
+    int count = 0;
 }
 
 <style>
     .noidung {
         line-break: normal;
         line-height: 35px;
+    }
+
+    .user__commenent__box {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding : 10px;
     }
 </style>
 @foreach (var items in Model.newspapers)
@@ -48,19 +54,44 @@
                 </p>
             </div>
 
-            <!---------- COMMENT BOX ---------------->
+            @foreach (var comment in Model.comments)
+            {
+                count++;
+            }
+
+            <h3> Ý Kiến (@count)</h3>
+
+                <!---------- COMMENT BOX ---------------->
+            @using (Html.BeginForm("DangCommentLenBaiBao", "HomePage"))
+            {
+                <div class="d-flex mt-3">
+                    <input type="text" class="form-control" name="Noidung" placeholder="Chia Sẻ Ý Kiến Của Bạn" />
+                    <input type="submit" class="btn btn-outline-primary" value="Đăng" />
+                </div>
+            }
 
             @foreach (var comment in Model.comments)
             {
-                @Html.DisplayFor(model => comment.comment_noidung)
+                <div class="user__commenent__box mt-3">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="d-flex w-75">
+                            <p class="fw-bold">
+                                @Html.DisplayFor(model => comment.User.UserName) 
+                            </p>
+                            <p style="margin-left : 20px;">
+                                @Html.DisplayFor(model => comment.comment_noidung)
+                            </p>
+                        </div>
+
+                        <div>
+                            <p> @Html.DisplayFor(model => comment.ThoiDiem_Comment)</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
             }
-            
-            @using (Html.BeginForm("DangCommentLenBaiBao" , "HomePage"))
-            {
-                <input type="text" class="form-control" name="Noidung"/>
-                <input type="submit" />
-            }
-        </div>
+            </div>
     </div>
 
 }

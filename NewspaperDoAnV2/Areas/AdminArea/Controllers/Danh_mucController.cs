@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
+using System.Web.DynamicData;
 using System.Web.Mvc;
 using NewspaperDoAnV2.Models;
 
@@ -12,16 +13,17 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
 {
     public class Danh_mucController : Controller
     {
-        private NewspaperV13Entities db = new NewspaperV13Entities();
+        
+        NewspaperV13Entities db = new NewspaperV13Entities();
 
         // GET: AdminArea/Danh_muc
         public ActionResult Index()
         {
-            if (Session["username"].ToString() != null)
+            if (IsAdmin_IsLogin())
             {
                 return View(db.Danh_muc.ToList());
             }
-            return RedirectToAction("Login", "LogInSignUp");
+            return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
 
         // GET: AdminArea/Danh_muc/Details/5
@@ -42,7 +44,11 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         // GET: AdminArea/Danh_muc/Create
         public ActionResult Create()
         {
-            return View();
+            if (IsAdmin_IsLogin())
+            {
+                return View();
+            }
+            return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
 
         // POST: AdminArea/Danh_muc/Create
@@ -65,16 +71,20 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         // GET: AdminArea/Danh_muc/Edit/5
         public ActionResult Edit(int? id)
         {
-            if (id == null)
+            if (IsAdmin_IsLogin())
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                if (id == null)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                Danh_muc danh_muc = db.Danh_muc.Find(id);
+                if (danh_muc == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(danh_muc);
             }
-            Danh_muc danh_muc = db.Danh_muc.Find(id);
-            if (danh_muc == null)
-            {
-                return HttpNotFound();
-            }
-            return View(danh_muc);
+            return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
 
         // POST: AdminArea/Danh_muc/Edit/5
@@ -96,17 +106,21 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         // GET: AdminArea/Danh_muc/Delete/5
         public ActionResult Delete(int? id)
         {
-            if (id == null)
+            if (IsAdmin_IsLogin())
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                if (id == null)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                Danh_muc danh_muc = db.Danh_muc.Find(id);
+                if (danh_muc == null)
+                {
+                    return HttpNotFound();
+
+                }
+                return View(danh_muc);
             }
-            Danh_muc danh_muc = db.Danh_muc.Find(id);
-            if (danh_muc == null)
-            {
-                return HttpNotFound();
-                
-            }
-            return View(danh_muc);
+            return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
 
         // POST: AdminArea/Danh_muc/Delete/5
@@ -127,6 +141,15 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public bool IsAdmin_IsLogin()
+        {
+            if (Session["username"] != null && Convert.ToInt32(Session["Roles"]) == 1 && Session["Roles"] != null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

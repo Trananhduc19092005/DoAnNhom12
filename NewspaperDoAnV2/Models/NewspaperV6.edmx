@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="NewspaperV13Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="NewspaperV13Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Comment">
           <Key>
             <PropertyRef Name="commentid" />
@@ -13,6 +13,7 @@
           <Property Name="comment_noidung" Type="nvarchar" MaxLength="500" />
           <Property Name="UserID" Type="int" />
           <Property Name="NewspaperId" Type="int" />
+          <Property Name="ThoiDiem_Comment" Type="datetime" />
         </EntityType>
         <EntityType Name="Danh_muc">
           <Key>
@@ -189,8 +190,7 @@
             <End Role="Newspaper" EntitySet="Newspaper" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="NewspaperV13Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -204,6 +204,7 @@
           <Property Name="NewspaperId" Type="Int32" />
           <NavigationProperty Name="Newspaper" Relationship="Self.FK__Comment__Newspap__571DF1D5" FromRole="Comment" ToRole="Newspaper" />
           <NavigationProperty Name="User" Relationship="Self.FK__Comment__UserID__5629CD9C" FromRole="Comment" ToRole="Users" />
+          <Property Name="ThoiDiem_Comment" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="Danh_muc">
           <Key>
@@ -401,6 +402,7 @@
           <EntitySetMapping Name="Comments">
             <EntityTypeMapping TypeName="NewspaperV13Model.Comment">
               <MappingFragment StoreEntitySet="Comment">
+                <ScalarProperty Name="ThoiDiem_Comment" ColumnName="ThoiDiem_Comment" />
                 <ScalarProperty Name="commentid" ColumnName="commentid" />
                 <ScalarProperty Name="comment_noidung" ColumnName="comment_noidung" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />

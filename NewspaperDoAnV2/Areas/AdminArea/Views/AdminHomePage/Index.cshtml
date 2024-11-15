@@ -3,20 +3,26 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Areas/AdminArea/Views/Shared/_adminlayout.cshtml";
-    var countnewspaper = 0;
-    var danhmuccount = 0;
+    int batdongsancount = 0;
+    int chinhtricount = 0;
+    int congnghecount = 0;
+    int thethaocount = 0;
 }
 
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+</head>
+
 <style>
-    .Newspaper_info , .Danh_muc
-    {
-        height : 100%;
-        border-radius : 20px;
+    .Newspaper_info, .Danh_muc {
+        height: 100%;
+        border-radius: 20px;
     }
-    .Newspaper_SoLuong , .Danh_muc_SoLuong {
+
+    .Newspaper_SoLuong, .Danh_muc_SoLuong {
         height: 100px;
         width: 300px;
-
     }
 </style>
 
@@ -24,29 +30,70 @@
 {
     foreach (var newspaper in list.newspaperList)
     {
-        if (Session["username"].ToString() == newspaper.User.UserName)
+        if (Session["username"].ToString().Equals(newspaper.User.UserName))
         {
-            countnewspaper++;
+            if (newspaper.Danh_muc.danhmuc_noidung == "Bất Động Sản")
+            {
+                batdongsancount++;
+            }
+            if (newspaper.Danh_muc.danhmuc_noidung == "Chính Trị")
+            {
+                chinhtricount++;
+            }
+            if (newspaper.Danh_muc.danhmuc_noidung == "Công Nghệ")
+            {
+                congnghecount++;
+            }
+            if (newspaper.Danh_muc.danhmuc_noidung == "Thể Thao")
+            {
+                thethaocount++;
+            }
         }
-    }
-
-    foreach (var danhmuc in list.danhmucList)
-    {
-        danhmuccount++;
     }
 }
 
-<div class="container d-flex justify-content-around">
-    <div class="Newspaper_SoLuong">
-        <div class="Newspaper_info d-flex flex-column justify-content-center align-items-center bg-primary text-light">
-            <p> Số Lượng Bài Báo Đã Viết  : @countnewspaper</p>
-        </div>
-    </div>
 
-    <div class="Danh_muc_SoLuong">
-        <div class="Danh_muc d-flex flex-column justify-content-center align-items-center bg-primary text-light">
-            <p> Số Lượng Danh Mục : @danhmuccount </p>
-        </div>
-    </div>
+
+<div class="container mt-4 mb-4">
+    <canvas id="myChart" style="width:100%"></canvas>
 </div>
+
+<script>
+    const xValues = ["Bất Động Sản" , "Chính Trị" , "Công Nghệ" , "Thể Thao"];
+
+    new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                label: "Số Lượng",
+                data: [
+                    @batdongsancount ,
+                    @chinhtricount ,
+                    @congnghecount ,
+                    @thethaocount
+                ],
+                backgroundColor: 
+                    "#FFC4A4",
+                
+            }],
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    display: true,
+                    ticks: {
+                        beginAtZero: true, 
+                        steps: 10,
+                        stepValue: 5,
+                    }
+                }]
+            }, 
+            title: {
+                display: true,
+                text : "Số Lượng Bài Báo Mà Bạn Đã Viết"
+            }
+        }
+    });
+</script>
 

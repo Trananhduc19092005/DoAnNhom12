@@ -15,7 +15,8 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
     {
 
         NewspaperV13Entities db = new NewspaperV13Entities();
-        // GET: UserArea/HomePage
+
+        // Trang chủ chính
 
         public ActionResult HomePage(string OrderBy)
         {
@@ -28,6 +29,7 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
             return View(newspaper.ToList());
         }
 
+        // Hiển Thị Bài Báo KHi ấn vào đọc thêm
 
 
         public ActionResult BaiBao(int? id)
@@ -38,12 +40,14 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
 
             var NewspaperComment = new NewspaperComment()
             {
-                comments = CommentFind.ToList(),
+                comments = CommentFind.OrderByDescending(x => x.ThoiDiem_Comment).ToList(),
                 newspapers = NewspaperFind.ToList(),
             };
             return View(NewspaperComment);
         }
 
+
+        // Đăng Comment Lên Bài Báo
 
         [HttpPost]
         public ActionResult DangCommentLenBaiBao(string Noidung)
@@ -52,6 +56,7 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
             var New_newcomment = new Comment()
             {
                 comment_noidung = Noidung,
+                ThoiDiem_Comment = DateTime.Now,
 
                 // Cho UserId bằng với Session["userid] nếu người dùng đăng nhập
 
@@ -70,6 +75,7 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
                         }));
         }
 
+        // Trang Thể Thao
 
         public ActionResult TheThao(string OrderBy)
         {
@@ -83,6 +89,8 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
                 return View(newspaper.ToList());
         }
 
+        // Trang Bất Động Sản
+
         public ActionResult BatDongSan(string OrderBy)
         {
             var newspaper = db.Newspapers.AsQueryable();
@@ -93,6 +101,8 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
             }
             return View(newspaper.ToList());
         }
+
+        // Trang Công Nghệ
 
         public ActionResult CongNghe(string OrderBy)
         {
@@ -105,6 +115,8 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
             return View(newspaper.ToList());
         }
 
+        // Trang Chính Trị
+
         public ActionResult ChinhTri(string OrderBy)
         {
           
@@ -115,9 +127,9 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
                     case "name_desc": newspaper = newspaper.OrderByDescending(x => x.Newspaper_tieude); break;
                 }
                 return View(newspaper.ToList());
-            
         }
 
+        // Trang Tìm Kiếm
 
         public ActionResult Search(string search , string OrderByDanhMuc , string OrderByName)
         {

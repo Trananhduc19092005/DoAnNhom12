@@ -28,6 +28,9 @@ namespace NewspaperDoAnV2.Controllers
                 var GetUserName = db.Users.FirstOrDefault(x => x.UserName.Equals(username));
                 return View(GetUserName);
             }
+
+            // Bắt Lỗi Session == null 
+
             catch (Exception ex) { return RedirectToAction("Login", "LoginSignUp"); }
 
         }
@@ -41,6 +44,9 @@ namespace NewspaperDoAnV2.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(User user)
         {
+
+            // Tìm Kiếm Xem trong db có Tài Khoản Nào có UserName Tồn Tại chưa
+
             var list = db.Users.Any(model => model.UserName == user.UserName);
 
             if (list)
@@ -53,6 +59,9 @@ namespace NewspaperDoAnV2.Controllers
             {
                 if (!list)
                 {
+
+                    // Mặc Định User Khi Tạo Tài KHoản Role Là Users
+
                     user.Role_id = 2;
                     db.Users.Add(user);
                     db.SaveChanges();
@@ -60,7 +69,6 @@ namespace NewspaperDoAnV2.Controllers
                 }
             }
 
-            ViewBag.Role_id = new SelectList(db.Phan_Quyen, "Role_id", "Role_name", user.Role_id);
             return View(user);
         }
 
@@ -77,7 +85,6 @@ namespace NewspaperDoAnV2.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.Role_id = new SelectList(db.Phan_Quyen, "Role_id", "Role_name", user.Role_id);
             return View(user);
         }
 
@@ -86,7 +93,7 @@ namespace NewspaperDoAnV2.Controllers
 
         public ActionResult Edit(User user)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 // RoleAdmin
                 if (Convert.ToInt32(Session["Roles"].ToString()) == 1)
@@ -218,8 +225,26 @@ namespace NewspaperDoAnV2.Controllers
 
         public ActionResult LogOut()
         {
+
+            // Nếu Role Là Admin
+
+            if (Convert.ToInt32(Session["Roles"].ToString()) == 1)
+            {
+                Session.Clear();
+                return RedirectToAction("Login", "LogInSignUp");
+            }
+            
+            // Nếu Role Là Users
+
             Session.Clear();
-            return RedirectToAction("Login", "LogInSignUp");
+            return RedirectToAction(null,
+                new RouteValueDictionary(
+                    new
+                    {
+                        controller = "HomePage",
+                        action = "HomePage",
+                        Area = "UserArea"
+                    }));
         }
 
 
