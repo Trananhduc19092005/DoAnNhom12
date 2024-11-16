@@ -16,23 +16,36 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
 
         public ActionResult Index()
         {
-            try
+            if (IsAdmin_IsLogin())
             {
-                var items = new Newspaper_ChuyenMuc
+                try
                 {
-                    danhmucList = db.Danh_muc.ToList(),
-                    newspaperList = db.Newspapers.ToList(),
-                };
-                List<Newspaper_ChuyenMuc> List = new List<Newspaper_ChuyenMuc>
+                    var items = new Newspaper_ChuyenMuc
+                    {
+                        danhmucList = db.Danh_muc.ToList(),
+                        newspaperList = db.Newspapers.ToList(),
+                    };
+                    List<Newspaper_ChuyenMuc> List = new List<Newspaper_ChuyenMuc>
                 {
                     items
                 };
-                return View(List.AsEnumerable());
+                    return View(List.AsEnumerable());
+                }
+                catch (Exception ex)
+                {
+                    return RedirectToAction("Login", "Users");
+                }
             }
-            catch (Exception ex) {
-                return RedirectToAction("Login", "Users");
-            }
+            return RedirectToAction("Login", "LogInSignUp", new { area = "" });
+        }
 
+        public bool IsAdmin_IsLogin()
+        {
+            if (Session["username"] != null && Convert.ToInt32(Session["Roles"]) == 1 && Session["Roles"] != null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

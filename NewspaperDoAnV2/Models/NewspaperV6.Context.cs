@@ -27,7 +27,6 @@ namespace NewspaperDoAnV2.Models
     
         public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<Danh_muc> Danh_muc { get; set; }
-        public virtual DbSet<Liked> Likeds { get; set; }
         public virtual DbSet<Newspaper> Newspapers { get; set; }
         public virtual DbSet<Phan_Quyen> Phan_Quyen { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }

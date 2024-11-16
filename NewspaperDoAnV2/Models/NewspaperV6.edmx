@@ -22,14 +22,6 @@
           <Property Name="danhmuc_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="danhmuc_noidung" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <EntityType Name="Liked">
-          <Key>
-            <PropertyRef Name="like_id" />
-          </Key>
-          <Property Name="like_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="UserID" Type="int" />
-          <Property Name="NewspaperId" Type="int" />
-        </EntityType>
         <EntityType Name="Newspaper">
           <Key>
             <PropertyRef Name="NewspaperId" />
@@ -93,30 +85,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Liked__Newspaper__5AEE82B9">
-          <End Role="Newspaper" Type="Self.Newspaper" Multiplicity="0..1" />
-          <End Role="Liked" Type="Self.Liked" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Newspaper">
-              <PropertyRef Name="NewspaperId" />
-            </Principal>
-            <Dependent Role="Liked">
-              <PropertyRef Name="NewspaperId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__Liked__UserID__59FA5E80">
-          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
-          <End Role="Liked" Type="Self.Liked" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="UserID" />
-            </Principal>
-            <Dependent Role="Liked">
-              <PropertyRef Name="UserID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__Newspaper__UserI__52593CB8">
           <End Role="Users" Type="Self.Users" Multiplicity="1" />
           <End Role="Newspaper" Type="Self.Newspaper" Multiplicity="*" />
@@ -156,7 +124,6 @@
         <EntityContainer Name="NewspaperV13ModelStoreContainer">
           <EntitySet Name="Comment" EntityType="Self.Comment" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Danh_muc" EntityType="Self.Danh_muc" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Liked" EntityType="Self.Liked" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Newspaper" EntityType="Self.Newspaper" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Phan_Quyen" EntityType="Self.Phan_Quyen" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
@@ -168,14 +135,6 @@
           <AssociationSet Name="FK__Comment__UserID__5629CD9C" Association="Self.FK__Comment__UserID__5629CD9C">
             <End Role="Users" EntitySet="Users" />
             <End Role="Comment" EntitySet="Comment" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Liked__Newspaper__5AEE82B9" Association="Self.FK__Liked__Newspaper__5AEE82B9">
-            <End Role="Newspaper" EntitySet="Newspaper" />
-            <End Role="Liked" EntitySet="Liked" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Liked__UserID__59FA5E80" Association="Self.FK__Liked__UserID__59FA5E80">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Liked" EntitySet="Liked" />
           </AssociationSet>
           <AssociationSet Name="FK__Newspaper__UserI__52593CB8" Association="Self.FK__Newspaper__UserI__52593CB8">
             <End Role="Users" EntitySet="Users" />
@@ -214,16 +173,6 @@
           <Property Name="danhmuc_noidung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Newspapers" Relationship="Self.fk_danhmucid" FromRole="Danh_muc" ToRole="Newspaper" />
         </EntityType>
-        <EntityType Name="Liked">
-          <Key>
-            <PropertyRef Name="like_id" />
-          </Key>
-          <Property Name="like_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="UserID" Type="Int32" />
-          <Property Name="NewspaperId" Type="Int32" />
-          <NavigationProperty Name="Newspaper" Relationship="Self.FK__Liked__Newspaper__5AEE82B9" FromRole="Liked" ToRole="Newspaper" />
-          <NavigationProperty Name="User" Relationship="Self.FK__Liked__UserID__59FA5E80" FromRole="Liked" ToRole="Users" />
-        </EntityType>
         <EntityType Name="Newspaper">
           <Key>
             <PropertyRef Name="NewspaperId" />
@@ -237,7 +186,6 @@
           <Property Name="danhmuc_id" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Comments" Relationship="Self.FK__Comment__Newspap__571DF1D5" FromRole="Newspaper" ToRole="Comment" />
           <NavigationProperty Name="Danh_muc" Relationship="Self.fk_danhmucid" FromRole="Newspaper" ToRole="Danh_muc" />
-          <NavigationProperty Name="Likeds" Relationship="Self.FK__Liked__Newspaper__5AEE82B9" FromRole="Newspaper" ToRole="Liked" />
           <NavigationProperty Name="User" Relationship="Self.FK__Newspaper__UserI__52593CB8" FromRole="Newspaper" ToRole="Users" />
         </EntityType>
         <EntityType Name="Phan_Quyen">
@@ -268,7 +216,6 @@
           <Property Name="UserPassword" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Role_id" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Comments" Relationship="Self.FK__Comment__UserID__5629CD9C" FromRole="Users" ToRole="Comment" />
-          <NavigationProperty Name="Likeds" Relationship="Self.FK__Liked__UserID__59FA5E80" FromRole="Users" ToRole="Liked" />
           <NavigationProperty Name="Newspapers" Relationship="Self.FK__Newspaper__UserI__52593CB8" FromRole="Users" ToRole="Newspaper" />
           <NavigationProperty Name="Phan_Quyen" Relationship="Self.FK__Users__Role_id__4CA06362" FromRole="Users" ToRole="Phan_Quyen" />
         </EntityType>
@@ -308,30 +255,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Liked__Newspaper__5AEE82B9">
-          <End Role="Newspaper" Type="Self.Newspaper" Multiplicity="0..1" />
-          <End Role="Liked" Type="Self.Liked" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Newspaper">
-              <PropertyRef Name="NewspaperId" />
-            </Principal>
-            <Dependent Role="Liked">
-              <PropertyRef Name="NewspaperId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__Liked__UserID__59FA5E80">
-          <End Role="Users" Type="Self.User" Multiplicity="0..1" />
-          <End Role="Liked" Type="Self.Liked" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="UserID" />
-            </Principal>
-            <Dependent Role="Liked">
-              <PropertyRef Name="UserID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__Newspaper__UserI__52593CB8">
           <End Role="Users" Type="Self.User" Multiplicity="1" />
           <End Role="Newspaper" Type="Self.Newspaper" Multiplicity="*" />
@@ -359,7 +282,6 @@
         <EntityContainer Name="NewspaperV13Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Comments" EntityType="Self.Comment" />
           <EntitySet Name="Danh_muc" EntityType="Self.Danh_muc" />
-          <EntitySet Name="Likeds" EntityType="Self.Liked" />
           <EntitySet Name="Newspapers" EntityType="Self.Newspaper" />
           <EntitySet Name="Phan_Quyen" EntityType="Self.Phan_Quyen" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
@@ -375,14 +297,6 @@
           <AssociationSet Name="fk_danhmucid" Association="Self.fk_danhmucid">
             <End Role="Danh_muc" EntitySet="Danh_muc" />
             <End Role="Newspaper" EntitySet="Newspapers" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Liked__Newspaper__5AEE82B9" Association="Self.FK__Liked__Newspaper__5AEE82B9">
-            <End Role="Newspaper" EntitySet="Newspapers" />
-            <End Role="Liked" EntitySet="Likeds" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Liked__UserID__59FA5E80" Association="Self.FK__Liked__UserID__59FA5E80">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Liked" EntitySet="Likeds" />
           </AssociationSet>
           <AssociationSet Name="FK__Newspaper__UserI__52593CB8" Association="Self.FK__Newspaper__UserI__52593CB8">
             <End Role="Users" EntitySet="Users" />
@@ -415,15 +329,6 @@
               <MappingFragment StoreEntitySet="Danh_muc">
                 <ScalarProperty Name="danhmuc_id" ColumnName="danhmuc_id" />
                 <ScalarProperty Name="danhmuc_noidung" ColumnName="danhmuc_noidung" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Likeds">
-            <EntityTypeMapping TypeName="NewspaperV13Model.Liked">
-              <MappingFragment StoreEntitySet="Liked">
-                <ScalarProperty Name="like_id" ColumnName="like_id" />
-                <ScalarProperty Name="UserID" ColumnName="UserID" />
-                <ScalarProperty Name="NewspaperId" ColumnName="NewspaperId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

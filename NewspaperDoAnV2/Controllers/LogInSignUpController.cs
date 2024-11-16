@@ -48,16 +48,22 @@ namespace NewspaperDoAnV2.Controllers
             // Tìm Kiếm Xem trong db có Tài Khoản Nào có UserName Tồn Tại chưa
 
             var list = db.Users.Any(model => model.UserName == user.UserName);
+            var Check_Exits_Email = db.Users.Any(model => model.UserEmail.Equals(user.UserEmail));
 
             if (list)
             {
-                ViewBag.Message = "This Account Is Already Exist";
-                return RedirectToAction("Create");
+                ViewBag.Message = "Tài Khoản Đã Tồn Tại !";
+                return View();
             }
 
+            if (Check_Exits_Email)
+            {
+                ViewBag.EmailErrorMessage = "Email Đã Tồn Tại !";
+                return View();
+            }
             if (ModelState.IsValid)
             {
-                if (!list)
+                if (!list || !Check_Exits_Email)
                 {
 
                     // Mặc Định User Khi Tạo Tài KHoản Role Là Users

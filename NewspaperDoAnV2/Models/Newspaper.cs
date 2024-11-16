@@ -18,7 +18,6 @@ namespace NewspaperDoAnV2.Models
         public Newspaper()
         {
             this.Comments = new HashSet<Comment>();
-            this.Likeds = new HashSet<Liked>();
         }
     
         public int NewspaperId { get; set; }
@@ -32,8 +31,6 @@ namespace NewspaperDoAnV2.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual Danh_muc Danh_muc { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Liked> Likeds { get; set; }
         public virtual User User { get; set; }
     }
 }

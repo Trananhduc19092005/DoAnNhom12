@@ -136,6 +136,7 @@
     <Compile Include="Areas\AdminArea\Controllers\AdminHomePageController.cs" />
     <Compile Include="Areas\AdminArea\Controllers\Danh_mucController.cs" />
     <Compile Include="Areas\AdminArea\Controllers\NewspapersController.cs" />
+    <Compile Include="Areas\UserArea\Controllers\CommentController.cs" />
     <Compile Include="Areas\UserArea\Controllers\HomePageController.cs" />
     <Compile Include="Areas\UserArea\UserAreaAreaRegistration.cs" />
     <Compile Include="Controllers\LogInSignUpController.cs" />
@@ -145,10 +146,8 @@
     <Compile Include="Models\Comment.cs">
       <DependentUpon>NewspaperV6.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CommentSearch\CommentDetail.cs" />
     <Compile Include="Models\Danh_muc.cs">
-      <DependentUpon>NewspaperV6.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Liked.cs">
       <DependentUpon>NewspaperV6.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Newspaper.cs">
@@ -280,6 +279,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\AdminArea\Data\" />
     <Folder Include="Areas\UserArea\Data\" />
+    <Folder Include="Areas\UserArea\Views\Comment\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

@@ -19,10 +19,9 @@ namespace NewspaperDoAnV2.Models
         public User()
         {
             this.Comments = new HashSet<Comment>();
-            this.Likeds = new HashSet<Liked>();
             this.Newspapers = new HashSet<Newspaper>();
         }
-    
+
         public int UserID { get; set; }
 
         [Required(ErrorMessage = "Ô Này Không Được Để Trống")]
@@ -37,15 +36,13 @@ namespace NewspaperDoAnV2.Models
         public string UserPassword { get; set; }
 
         [DataType(DataType.Password)]
-        [Compare("UserPassword" , ErrorMessage = "Mật Khẩu Không Trùng Vui Lòng Kiểm Tra Lại ! ")]
+        [Compare("UserPassword", ErrorMessage = "Mật Khẩu Không Trùng Vui Lòng Kiểm Tra Lại ! ")]
 
         public string Repassword { get; set; }
         public int Role_id { get; set; }
-    
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comment> Comments { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Liked> Likeds { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Newspaper> Newspapers { get; set; }
         public virtual Phan_Quyen Phan_Quyen { get; set; }

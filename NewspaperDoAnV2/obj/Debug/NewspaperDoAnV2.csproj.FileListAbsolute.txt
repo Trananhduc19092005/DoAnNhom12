@@ -134,6 +134,7 @@ E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\bin\roslyn\vbc.rsp
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\bin\roslyn\VBCSCompiler.exe
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\bin\roslyn\VBCSCompiler.exe.config
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\bin\Antlr3.Runtime.dll
+E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\bin\AuthPackage.dll
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\bin\EntityFramework.dll
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\bin\EntityFramework.SqlServer.dll
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -164,4 +165,3 @@ E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\obj\Debug\NewspaperDoAnV2.csproj.C
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\obj\Debug\Newspape.71C8D889.Up2Date
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\obj\Debug\NewspaperDoAnV2.dll
 E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\obj\Debug\NewspaperDoAnV2.pdb
-E:\ASPNET MVC\NewspaperDoAnV2\NewspaperDoAnV2\bin\AuthPackage.dll

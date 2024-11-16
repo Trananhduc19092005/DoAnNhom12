@@ -31,12 +31,11 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
 
         // Hiển Thị Bài Báo KHi ấn vào đọc thêm
 
-
-        public ActionResult BaiBao(int? id)
+        public ActionResult BaiBao(int? NewspaperId)
         {
-            var NewspaperFind = db.Newspapers.Where(x => x.NewspaperId == id);
-            var CommentFind = db.Comments.Where(x => x.NewspaperId == id);
-            Session["NewspaperID"] = id;
+            var NewspaperFind = db.Newspapers.Where(x => x.NewspaperId == NewspaperId);
+            var CommentFind = db.Comments.Where(x => x.NewspaperId == NewspaperId);
+            Session["Newspaper"] = NewspaperId;
 
             var NewspaperComment = new NewspaperComment()
             {
@@ -52,29 +51,26 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
         [HttpPost]
         public ActionResult DangCommentLenBaiBao(string Noidung)
         {
-            var FindNewspaperId = Convert.ToInt32(Session["NewspaperID"].ToString());
+            var FindNewspaperId = Convert.ToInt32(Session["Newspaper"].ToString());
             var New_newcomment = new Comment()
             {
                 comment_noidung = Noidung,
-                ThoiDiem_Comment = DateTime.Now,
-
                 // Cho UserId bằng với Session["userid] nếu người dùng đăng nhập
-
                 UserID = Convert.ToInt32(Session["UserId"].ToString()),
-                NewspaperId = FindNewspaperId
+                NewspaperId = FindNewspaperId ,
+                ThoiDiem_Comment = DateTime.Now
             };
             db.Comments.Add(New_newcomment);
             db.SaveChanges();
-            return RedirectToAction("BaiBao",
+            return RedirectToAction(null,
                     new RouteValueDictionary(
                         new
                         {
                             controller = "HomePage",
                             action = "BaiBao",
-                            id = Convert.ToInt32(Session["NewspaperID"].ToString())
+                            NewspaperId = FindNewspaperId
                         }));
         }
-
         // Trang Thể Thao
 
         public ActionResult TheThao(string OrderBy)

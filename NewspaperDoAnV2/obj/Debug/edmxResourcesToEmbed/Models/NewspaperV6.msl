@@ -20,15 +20,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Likeds">
-      <EntityTypeMapping TypeName="NewspaperV13Model.Liked">
-        <MappingFragment StoreEntitySet="Liked">
-          <ScalarProperty Name="like_id" ColumnName="like_id" />
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
-          <ScalarProperty Name="NewspaperId" ColumnName="NewspaperId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Newspapers">
       <EntityTypeMapping TypeName="NewspaperV13Model.Newspaper">
         <MappingFragment StoreEntitySet="Newspaper">
