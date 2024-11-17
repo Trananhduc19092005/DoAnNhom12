@@ -7,20 +7,67 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using NewspaperDoAnV2.Models;
+using NewspaperDoAnV2.Models.NewspaperSearch;
 
 namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
 {
     public class NewspapersController : Controller
     {
-        private NewspaperV13Entities db = new NewspaperV13Entities();
+        NewspaperV13V2Entities1 db = new NewspaperV13V2Entities1();
+
 
         // GET: AdminArea/Newspapers
-        public ActionResult Index()
+        public ActionResult Index(string search, string OrderByDanhMuc, string OrderByName)
         {
             if (IsAdmin_IsLogin())
             {
-                var newspapers = db.Newspapers.Include(n => n.Danh_muc).Include(n => n.User);
-                return View(newspapers.ToList());
+   
+                NewspaperSearchVM searchVM = new NewspaperSearchVM();
+
+                var NewspaperList = db.Newspapers.AsQueryable();
+
+                if (search != null)
+                {
+                    searchVM.NewspaperName = search;
+                    NewspaperList = NewspaperList.Where(x => x.Newspaper_tieude.Contains(search));
+                    ViewBag.Search = search;
+                }
+
+
+                if (OrderByDanhMuc != null)
+                {
+                    switch (OrderByDanhMuc)
+                    {
+                        case "BatDongSan": NewspaperList = NewspaperList.Where(x => x.Danh_muc.danhmuc_noidung == "Bất Động Sản"); break;
+                        case "ChinhTri": NewspaperList = NewspaperList.Where(x => x.Danh_muc.danhmuc_noidung == "Chính Trị"); break;
+                        case "TheThao": NewspaperList = NewspaperList.Where(x => x.Danh_muc.danhmuc_noidung == "Thể Thao"); break;
+                        case "CongNghe": NewspaperList = NewspaperList.Where(x => x.Danh_muc.danhmuc_noidung == "Công Nghệ"); break;
+                        default:
+                            NewspaperList = NewspaperList.OrderBy(x => x.NewspaperId);
+                            break;
+                    }
+                    searchVM.NewspaperOrderByDanhMuc = OrderByDanhMuc;
+                }
+
+                if (OrderByName != null)
+                {
+                    switch (OrderByName)
+                    {
+                        case "name_asc": NewspaperList = NewspaperList.OrderBy(x => x.Newspaper_tieude); break;
+                        case "name_desc": NewspaperList = NewspaperList.OrderByDescending(x => x.Newspaper_tieude); break;
+
+                        default:
+                            NewspaperList = NewspaperList.OrderBy(x => x.NewspaperId);
+                            break;
+                    }
+                    searchVM.OrderByName = OrderByName;
+                }
+
+
+                searchVM.newspaperlist = NewspaperList.ToList();
+
+                return View(searchVM);
+        
             }
             return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
@@ -66,20 +113,22 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         {
             if (ModelState.IsValid)
             {
+                ViewBag.danhmuc_id = new SelectList(db.Danh_muc, "danhmuc_id", "danhmuc_noidung");
+                ViewBag.UserID = new SelectList(db.Users, "UserID", "UserName");
                 var new_newspaper = new Newspaper()
                 {
-                    NewspaperId = newspaper.NewspaperId ,
+                    NewspaperId = newspaper.NewspaperId,
                     Newspaper_tieude = newspaper.Newspaper_tieude,
-                    Newspaper_tieudephu = newspaper.Newspaper_tieudephu ,
+                    Newspaper_tieudephu = newspaper.Newspaper_tieudephu,
                     Newspaper_anh = newspaper.Newspaper_anh,
                     Newspaper_noidung = newspaper.Newspaper_noidung,
-                    UserID = Convert.ToInt32(Session["UserId"].ToString()) ,
+                    UserID = Convert.ToInt32(Session["UserId"].ToString()),
                     danhmuc_id = newspaper.danhmuc_id
                 };
                 db.Newspapers.Add(new_newspaper);
                 db.SaveChanges();
                 return RedirectToAction("Index");
-            }           
+            }
             return View(newspaper);
         }
 
@@ -158,10 +207,17 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Newspaper newspaper = db.Newspapers.Find(id);
-            db.Newspapers.Remove(newspaper);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            try
+            {
+                Newspaper newspaper = db.Newspapers.Find(id);
+                db.Newspapers.Remove(newspaper);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex) 
+            {
+                return RedirectToAction("NewspaperError", "ErrorMessage", new { controller = "ErrorMessage" });
+            }
         }
 
         protected override void Dispose(bool disposing)

@@ -13,15 +13,15 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
 {
     public class Danh_mucController : Controller
     {
-        
-        NewspaperV13Entities db = new NewspaperV13Entities();
+
+        NewspaperV13V2Entities1 db = new NewspaperV13V2Entities1();
 
         // GET: AdminArea/Danh_muc
         public ActionResult Index()
         {
             if (IsAdmin_IsLogin())
             {
-                return View(db.Danh_muc.ToList());
+                return View(db.Danh_muc.OrderBy(x => x.danhmuc_id).ToList());
             }
             return RedirectToAction("Login", "LogInSignUp", new { area = "" });
         }
@@ -58,13 +58,17 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "danhmuc_id,danhmuc_noidung")] Danh_muc danh_muc)
         {
-            if (ModelState.IsValid)
+            var Exits_DanhMuc = db.Danh_muc.Any(x => x.danhmuc_noidung.Equals(danh_muc.danhmuc_noidung));
+            if (!Exits_DanhMuc)
             {
-                db.Danh_muc.Add(danh_muc);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    db.Danh_muc.Add(danh_muc);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
             }
-
+            ViewBag.DanhMucTonTai = "Danh Mục Đã Tồn Tại Vui Lòng Chọn Tên Khác";
             return View(danh_muc);
         }
 
@@ -128,10 +132,17 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Danh_muc danh_muc = db.Danh_muc.Find(id);
-            db.Danh_muc.Remove(danh_muc);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            try
+            {
+                Danh_muc danh_muc = db.Danh_muc.Find(id);
+                db.Danh_muc.Remove(danh_muc);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            catch (Exception e)
+            {
+                return RedirectToAction("DanhMucError" , "ErrorMessage", new { area = "AdminArea" });
+            }
         }
 
         protected override void Dispose(bool disposing)

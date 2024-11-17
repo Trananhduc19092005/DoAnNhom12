@@ -135,50 +135,48 @@
     <Compile Include="Areas\AdminArea\AdminAreaAreaRegistration.cs" />
     <Compile Include="Areas\AdminArea\Controllers\AdminHomePageController.cs" />
     <Compile Include="Areas\AdminArea\Controllers\Danh_mucController.cs" />
+    <Compile Include="Areas\AdminArea\Controllers\ErrorMessageController.cs" />
     <Compile Include="Areas\AdminArea\Controllers\NewspapersController.cs" />
-    <Compile Include="Areas\UserArea\Controllers\CommentController.cs" />
     <Compile Include="Areas\UserArea\Controllers\HomePageController.cs" />
     <Compile Include="Areas\UserArea\UserAreaAreaRegistration.cs" />
+    <Compile Include="Controllers\CommentDetailController.cs" />
     <Compile Include="Controllers\LogInSignUpController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Comment.cs">
-      <DependentUpon>NewspaperV6.tt</DependentUpon>
+      <DependentUpon>NewspaperDoAn.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CommentSearch\CommentDetail.cs" />
     <Compile Include="Models\Danh_muc.cs">
-      <DependentUpon>NewspaperV6.tt</DependentUpon>
+      <DependentUpon>NewspaperDoAn.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Newspaper.cs">
-      <DependentUpon>NewspaperV6.tt</DependentUpon>
+      <DependentUpon>NewspaperDoAn.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\NewspaperComment\NewspaperComment.cs" />
+    <Compile Include="Models\NewspaperDoAn.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewspaperDoAn.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewspaperDoAn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewspaperDoAn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewspaperDoAn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewspaperDoAn.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\NewspaperSearch\NewspaperSearchVM.cs" />
-    <Compile Include="Models\NewspaperV6.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NewspaperV6.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NewspaperV6.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NewspaperV6.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NewspaperV6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NewspaperV6.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\Newspaper_ChuyenMuc.cs" />
     <Compile Include="Models\Phan_Quyen.cs">
-      <DependentUpon>NewspaperV6.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>NewspaperV6.tt</DependentUpon>
+      <DependentUpon>NewspaperDoAn.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs">
-      <DependentUpon>NewspaperV6.tt</DependentUpon>
+      <DependentUpon>NewspaperDoAn.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -202,15 +200,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\NewspaperV6.Context.tt">
+    <Content Include="Models\NewspaperDoAn.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NewspaperV6.edmx</DependentUpon>
-      <LastGenOutput>NewspaperV6.Context.cs</LastGenOutput>
+      <DependentUpon>NewspaperDoAn.edmx</DependentUpon>
+      <LastGenOutput>NewspaperDoAn.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\NewspaperV6.tt">
+    <Content Include="Models\NewspaperDoAn.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NewspaperV6.edmx</DependentUpon>
-      <LastGenOutput>NewspaperV6.cs</LastGenOutput>
+      <DependentUpon>NewspaperDoAn.edmx</DependentUpon>
+      <LastGenOutput>NewspaperDoAn.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -232,13 +230,6 @@
     <Content Include="Areas\AdminArea\Views\Danh_muc\Index.cshtml" />
     <Content Include="Areas\UserArea\Views\web.config" />
     <Content Include="Areas\UserArea\Views\Shared\_UserMasterLayout.cshtml" />
-    <EntityDeploy Include="Models\NewspaperV6.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NewspaperV6.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\NewspaperV6.edmx.diagram">
-      <DependentUpon>NewspaperV6.edmx</DependentUpon>
-    </Content>
     <Content Include="Areas\UserArea\Views\HomePage\HomePage.cshtml" />
     <Content Include="Areas\UserArea\Views\HomePage\BaiBao.cshtml" />
     <Content Include="Areas\UserArea\Views\HomePage\TheThao.cshtml" />
@@ -247,7 +238,15 @@
     <Content Include="Areas\UserArea\Views\HomePage\ChinhTri.cshtml" />
     <Content Include="Areas\AdminArea\Views\AdminHomePage\Index.cshtml" />
     <Content Include="Areas\UserArea\Views\HomePage\Search.cshtml" />
-    <Content Include="Areas\UserArea\Views\HomePage\DangCommentLenBaiBao.cshtml" />
+    <Content Include="Areas\AdminArea\Views\ErrorMessage\DanhMucError.cshtml" />
+    <EntityDeploy Include="Models\NewspaperDoAn.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NewspaperDoAn.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\NewspaperDoAn.edmx.diagram">
+      <DependentUpon>NewspaperDoAn.edmx</DependentUpon>
+    </Content>
+    <Content Include="Areas\AdminArea\Views\ErrorMessage\NewspaperError.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -274,12 +273,16 @@
     <Content Include="Views\LogInSignUp\Create.cshtml" />
     <Content Include="Views\LogInSignUp\Index.cshtml" />
     <Content Include="Views\LogInSignUp\Edit.cshtml" />
+    <Content Include="Views\Shared\_UserDetailMasterLayout.cshtml" />
+    <Content Include="Views\CommentDetail\Index.cshtml" />
+    <Content Include="Views\CommentDetail\Edit.cshtml" />
+    <Content Include="Views\CommentDetail\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\AdminArea\Data\" />
     <Folder Include="Areas\UserArea\Data\" />
-    <Folder Include="Areas\UserArea\Views\Comment\" />
+    <Folder Include="Areas\UserArea\Views\UserCommentDetail\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

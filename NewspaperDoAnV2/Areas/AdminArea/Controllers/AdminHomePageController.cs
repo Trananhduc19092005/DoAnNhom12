@@ -10,7 +10,7 @@ namespace NewspaperDoAnV2.Areas.AdminArea.Controllers
 {
     public class AdminHomePageController : Controller
     {
-        NewspaperV13Entities db = new NewspaperV13Entities();
+        NewspaperV13V2Entities1 db = new NewspaperV13V2Entities1();
 
         // GET: AdminArea/AdminHomePage
 

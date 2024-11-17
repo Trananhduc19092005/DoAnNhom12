@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NewspaperV13V2ModelStoreContainer" CdmEntityContainer="NewspaperV13V2Entities1">
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="NewspaperV13V2Model.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="commentid" ColumnName="commentid" />
+          <ScalarProperty Name="comment_noidung" ColumnName="comment_noidung" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="NewspaperId" ColumnName="NewspaperId" />
+          <ScalarProperty Name="ThoiDiem_Comment" ColumnName="ThoiDiem_Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Danh_muc">
+      <EntityTypeMapping TypeName="NewspaperV13V2Model.Danh_muc">
+        <MappingFragment StoreEntitySet="Danh_muc">
+          <ScalarProperty Name="danhmuc_id" ColumnName="danhmuc_id" />
+          <ScalarProperty Name="danhmuc_noidung" ColumnName="danhmuc_noidung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Newspapers">
+      <EntityTypeMapping TypeName="NewspaperV13V2Model.Newspaper">
+        <MappingFragment StoreEntitySet="Newspaper">
+          <ScalarProperty Name="NewspaperId" ColumnName="NewspaperId" />
+          <ScalarProperty Name="Newspaper_tieude" ColumnName="Newspaper_tieude" />
+          <ScalarProperty Name="Newspaper_tieudephu" ColumnName="Newspaper_tieudephu" />
+          <ScalarProperty Name="Newspaper_anh" ColumnName="Newspaper_anh" />
+          <ScalarProperty Name="Newspaper_noidung" ColumnName="Newspaper_noidung" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="danhmuc_id" ColumnName="danhmuc_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Phan_Quyen">
+      <EntityTypeMapping TypeName="NewspaperV13V2Model.Phan_Quyen">
+        <MappingFragment StoreEntitySet="Phan_Quyen">
+          <ScalarProperty Name="Role_id" ColumnName="Role_id" />
+          <ScalarProperty Name="Role_name" ColumnName="Role_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="NewspaperV13V2Model.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="Role_id" ColumnName="Role_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

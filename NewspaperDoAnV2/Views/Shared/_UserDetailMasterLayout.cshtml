@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/131e0ec2d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        nav {
+            padding: 30px;
+            height: 50px;
+        }
+    </style>
+
+    <div class="box row row-cols-2">
+        <div class="col col-2 d-flex flex-column bg-dark mh-100 overflow-hidden" style="padding : 250px 25px">
+
+            <div class="QuanLyBao m-3 " style="">
+                <i class="fa-solid fa-user text-light"></i>
+                @Html.ActionLink("Thông Tin Tài Khoản", "Index", "LogInSignUp", null ,new { @class = "btn btn-primary m-3" })
+            </div>
+
+            <div class="Quanlychuyenmuc m-3">
+                <i class="fa-solid fa-user-gear text-light"></i>
+                @Html.ActionLink("Chỉnh Sửa Mật Khẩu Tài Khoản", "Edit", "LogInSignUp", new { id = Convert.ToInt32(Session["UserId"].ToString()) }, new { @class = "btn btn-danger m-3" })
+            </div>
+
+            <div class="Quanlychuyenmuc m-3">
+                <i class="fa-solid fa-message text-light"></i>
+                @Html.ActionLink("Quản Lý Bình Luận", "Index", "CommentDetail", new { id = Convert.ToInt32(Session["UserId"].ToString()) }, new { @class = "btn btn-success m-3" })
+            </div>
+        </div>
+
+        <div class="col col-10 mh-100">
+            <header class="">
+                <nav class="d-flex justify-content-between mt-4 mb-4 align-items-center bg-dark">
+                    <div class="nav-left nav-item">
+                        <!-- Admin -->
+                        @if (Convert.ToInt32(Session["Roles"].ToString()) == 1)
+                        {
+                            <a class="logo text-decoration-none  text-light" href="/AdminArea/AdminHomePage/Index" style="margin : 0 20px">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        }
+                        @if (Convert.ToInt32(Session["Roles"].ToString()) == 2)
+                        {
+                            <a class="logo text-decoration-none  text-light" href="/UserArea/HomePage/HomePage" style="margin : 0 20px">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        }
+                    </div>
+
+                    <div class="nav-right nav-item d-flex align-items-center">
+                        @if (Session["username"] != null)
+                        {
+                            <a href="##" class="text-light text-decoration-none" style="margin-right : 20px">
+                                Xin Chào @Session["username"] ! 
+                            </a>
+                            <a href="/LogInSignUp/LogOut" class="btn btn-danger">
+                                Đăng Xuất
+                            </a>
+                        }
+                    </div>
+                </nav>
+            </header>
+
+            <hr />
+
+            <div class="container d-flex flex-column justify-content-center">
+                @RenderBody()
+            </div>
+
+            <hr />
+
+            <footer class="d-flex flex-column justify-content-end">
+                This Web Was Created By Nhóm 12
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

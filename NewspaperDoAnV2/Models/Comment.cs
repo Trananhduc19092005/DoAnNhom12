@@ -16,8 +16,8 @@ namespace NewspaperDoAnV2.Models
     {
         public int commentid { get; set; }
         public string comment_noidung { get; set; }
-        public Nullable<int> UserID { get; set; }
-        public Nullable<int> NewspaperId { get; set; }
+        public int UserID { get; set; }
+        public int NewspaperId { get; set; }
         public Nullable<System.DateTime> ThoiDiem_Comment { get; set; }
     
         public virtual Newspaper Newspaper { get; set; }

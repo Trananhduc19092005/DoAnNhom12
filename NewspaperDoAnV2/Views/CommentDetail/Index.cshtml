@@ -1,0 +1,85 @@
+﻿@model NewspaperDoAnV2.Models.CommentSearch.CommentDetail
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserDetailMasterLayout.cshtml";
+}
+
+<style>
+    .user__commenent__box {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px;
+    }
+</style>
+
+<div class="d-flex">
+    @Html.ActionLink("Sắp Xếp Theo Tên Comment Tăng Dần", "Index", "CommentDetail", new
+    {
+        OrderByDanhMucSortByCommentDetail = "name_asc",
+        OrderByCommentTime = Model.SortByCommentTime
+    } , new {@class = "btn btn-primary m-2"})
+
+
+    @Html.ActionLink("Sắp Xếp Theo Tên Comment Giảm Dần", "Index", "CommentDetail", new
+    {
+        OrderByDanhMucSortByCommentDetail = "name_desc",
+        OrderByCommentTime = Model.SortByCommentTime
+    }, new { @class = "btn btn-primary m-2" })
+</div>
+
+<div class="d-flex">
+
+    @Html.ActionLink("Sắp Xếp Theo Thời Gian Comment Tăng Dần", "Index", "CommentDetail", new
+    {
+        OrderByDanhMucSortByCommentDetail = Model.SortByCommentDetail,
+        OrderByCommentTime = "time_asc"
+    }, new { @class = "btn btn-success m-2" })
+
+    @Html.ActionLink("Sắp Xếp Theo Thời Gian Comment Giảm Dần Dần", "Index", "CommentDetail", new
+    {
+        OrderByDanhMucSortByCommentDetail = Model.SortByCommentDetail,
+        OrderByCommentTime = "time_desc"
+    }, new { @class = "btn btn-success m-2" })
+
+    @Html.ActionLink("Xóa Tất Cả Tìm Kiếm" , "Index" , "CommentDetail" , new
+    {
+        OrderByDanhMucSortByCommentDetail = "" ,
+        OrderByCommentTime = ""
+    }, new { @class = "btn btn-danger m-2" })
+</div>
+
+@foreach (var items in Model.CommentList)
+{
+    if (Convert.ToInt32(Session["UserId"].ToString()) == items.UserID)
+    {
+       <div class="container">
+           <div class="user__commenent__box mt-5">
+               <div class="d-flex justify-content-between p-2">
+                   <div class="d-flex w-100">
+                       <p class="fw-bold">
+                           @Html.DisplayFor(model => items.User.UserName) : 
+                       </p>
+                       <p style="margin-left : 20px;">
+                           @Html.DisplayFor(model => items.comment_noidung)
+                       </p>
+                   </div>
+
+                   <div>
+                       <p> @Html.DisplayFor(model => items.ThoiDiem_Comment)</p>
+                   </div>
+
+                   <div class="d-flex">
+                       @Html.ActionLink("Chỉnh Sửa Bình Luận", "Edit", "CommentDetail" , new {id = items.commentid , newspaperid = items.NewspaperId , datetime = items.ThoiDiem_Comment}, new { @class = "btn btn-outline-primary" })
+                       @Html.ActionLink("Xóa Bình Luận", "Delete", "CommentDetail" , new {id = items.commentid}, new { @class = "btn btn-danger" })
+                   </div>
+               </div>
+
+               <div class="d-flex flex-column">
+                   <p class="fw-bolder"> Tên Bài Báo : @Html.DisplayFor(model => items.Newspaper.Newspaper_tieude)</p>
+                   <p class="fw-bolder"> @Html.ActionLink("Link Bài Báo" , "BaiBao" , "HomePage" , new {area = "UserArea" , NewspaperId = items.NewspaperId} , null)</p>
+
+               </div>
+           </div>
+       </div>
+    }
+}    

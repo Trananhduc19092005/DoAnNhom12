@@ -13,10 +13,10 @@ namespace NewspaperDoAnV2.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class NewspaperV13Entities : DbContext
+    public partial class NewspaperV13V2Entities1 : DbContext
     {
-        public NewspaperV13Entities()
-            : base("name=NewspaperV13Entities")
+        public NewspaperV13V2Entities1()
+            : base("name=NewspaperV13V2Entities1")
         {
         }
     
@@ -29,7 +29,6 @@ namespace NewspaperDoAnV2.Models
         public virtual DbSet<Danh_muc> Danh_muc { get; set; }
         public virtual DbSet<Newspaper> Newspapers { get; set; }
         public virtual DbSet<Phan_Quyen> Phan_Quyen { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
 }

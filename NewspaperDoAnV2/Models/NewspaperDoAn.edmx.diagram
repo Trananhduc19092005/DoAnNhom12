@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9b89952c481f4e549d38fe96e75d2334" Name="Diagram1">
+        <EntityTypeShape EntityType="NewspaperV13V2Model.Comment" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV13V2Model.Danh_muc" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV13V2Model.Newspaper" Width="1.5" PointX="8.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV13V2Model.Phan_Quyen" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewspaperV13V2Model.User" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="NewspaperV13V2Model.FK__Comment__Newspap__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV13V2Model.FK__Comment__UserID__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV13V2Model.fk_danhmucid" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV13V2Model.FK__Newspaper__UserI__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="NewspaperV13V2Model.FK__Users__Role_id__3D5E1FD2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

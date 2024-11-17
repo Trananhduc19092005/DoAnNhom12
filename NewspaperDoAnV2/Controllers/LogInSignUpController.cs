@@ -16,7 +16,7 @@ namespace NewspaperDoAnV2.Controllers
 {
     public class LogInSignUpController : Controller
     {
-        private NewspaperV13Entities db = new NewspaperV13Entities();
+        NewspaperV13V2Entities1 db = new NewspaperV13V2Entities1();
 
         // GET: AdminArea/Users
         public ActionResult Index()
@@ -220,6 +220,7 @@ namespace NewspaperDoAnV2.Controllers
                         Area = "UserArea"
                     }));
             }
+            ViewBag.ErrorMessage = "Vui Lòng Nhập Lại Sai Toàn Khoản Hoặc Mật Khẩu !";
             return View();
         }
 
@@ -231,17 +232,6 @@ namespace NewspaperDoAnV2.Controllers
 
         public ActionResult LogOut()
         {
-
-            // Nếu Role Là Admin
-
-            if (Convert.ToInt32(Session["Roles"].ToString()) == 1)
-            {
-                Session.Clear();
-                return RedirectToAction("Login", "LogInSignUp");
-            }
-            
-            // Nếu Role Là Users
-
             Session.Clear();
             return RedirectToAction(null,
                 new RouteValueDictionary(

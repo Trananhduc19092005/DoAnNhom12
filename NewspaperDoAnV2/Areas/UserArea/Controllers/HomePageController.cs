@@ -14,7 +14,7 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
     public class HomePageController : Controller
     {
 
-        NewspaperV13Entities db = new NewspaperV13Entities();
+        NewspaperV13V2Entities1 db = new NewspaperV13V2Entities1();
 
         // Trang chủ chính
 
@@ -51,25 +51,32 @@ namespace NewspaperDoAnV2.Areas.UserArea.Controllers
         [HttpPost]
         public ActionResult DangCommentLenBaiBao(string Noidung)
         {
-            var FindNewspaperId = Convert.ToInt32(Session["Newspaper"].ToString());
-            var New_newcomment = new Comment()
+            try
             {
-                comment_noidung = Noidung,
-                // Cho UserId bằng với Session["userid] nếu người dùng đăng nhập
-                UserID = Convert.ToInt32(Session["UserId"].ToString()),
-                NewspaperId = FindNewspaperId ,
-                ThoiDiem_Comment = DateTime.Now
-            };
-            db.Comments.Add(New_newcomment);
-            db.SaveChanges();
-            return RedirectToAction(null,
-                    new RouteValueDictionary(
-                        new
-                        {
-                            controller = "HomePage",
-                            action = "BaiBao",
-                            NewspaperId = FindNewspaperId
-                        }));
+                var FindNewspaperId = Convert.ToInt32(Session["Newspaper"].ToString());
+                var New_newcomment = new Comment()
+                {
+                    comment_noidung = Noidung,
+                    // Cho UserId bằng với Session["userid] nếu người dùng đăng nhập
+                    UserID = Convert.ToInt32(Session["UserId"].ToString()),
+                    NewspaperId = FindNewspaperId,
+                    ThoiDiem_Comment = DateTime.Now
+                };
+                db.Comments.Add(New_newcomment);
+                db.SaveChanges();
+                return RedirectToAction(null,
+                   new RouteValueDictionary(
+                       new
+                       {
+                           controller = "HomePage",
+                           action = "BaiBao",
+                           NewspaperId = FindNewspaperId
+                       }));
+            }
+            catch (Exception ex) 
+            {
+                return RedirectToAction("Login", "LogInSignUp", new { area = "" });
+            }
         }
         // Trang Thể Thao
 
